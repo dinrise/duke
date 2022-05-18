@@ -1,0 +1,1544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core Src">
+      <UniqueIdentifier>{358bc1f7-c507-4c03-afce-fc20aaf80858}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core Inc">
+      <UniqueIdentifier>{40a0e3bf-8fcd-433c-b694-6c77f7b02b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Src">
+      <UniqueIdentifier>{52b2918d-0360-4eaf-b4e7-ca2cfd8c6efe}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Engine Inc">
+      <UniqueIdentifier>{e97f7eb5-2f1b-4697-8a5b-3c45a51615b9}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Engine Classes">
+      <UniqueIdentifier>{8eb3c62a-66d9-40ea-9da4-17057a945bc5}</UniqueIdentifier>
+      <Extensions>*.uc</Extensions>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{cf95d713-2af9-4010-a465-b786a9b0ce07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bink">
+      <UniqueIdentifier>{f2d63eef-8946-4c61-8b80-6320ed9ffa54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Smacker">
+      <UniqueIdentifier>{8c43b8c5-479f-4d10-a8c1-5a517d469d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SapiSDK">
+      <UniqueIdentifier>{ab9fbb3e-fbbf-4234-a216-a876c846d648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Int">
+      <UniqueIdentifier>{149b1798-7f24-45ea-9352-2ba7f5df7596}</UniqueIdentifier>
+      <Extensions>*.int</Extensions>
+    </Filter>
+    <Filter Include="Window Src">
+      <UniqueIdentifier>{dcbd27a3-4e4d-480e-ac2f-7cdc5c98d60f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window Inc">
+      <UniqueIdentifier>{f41f5ee5-e025-4f16-a632-b0a4985c1098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinDrv Src">
+      <UniqueIdentifier>{d0280abd-d1e0-437c-b3e1-57fa1c05d1e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WinDrv Inc">
+      <UniqueIdentifier>{d63f9a66-c9cc-4019-ad3a-5eed9ed213ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IpDrv Src">
+      <UniqueIdentifier>{2eefb2d7-afc0-4931-90fd-4f54107db1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IpDrv Inc">
+      <UniqueIdentifier>{ce77e626-be14-4d4c-9757-b633f27e4bc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPDrv Classes">
+      <UniqueIdentifier>{cd6f564a-2bb4-4de6-b32e-318338828e90}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+    <Filter Include="IPServer Classes">
+      <UniqueIdentifier>{7bccb4e1-43be-420f-9d85-46566d63fe0d}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\Src\DnExec.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\mail.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UExporter.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UFactory.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnAnsi.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnBits.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnCache.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnClass.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnCoreNet.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnCorSc.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnLinker.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnMath.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnMem.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnMisc.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnName.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnObj.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnProp.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnVcWin32.cpp">
+      <Filter>Core Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ABeamSystem.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ABreakableGlass.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ADukeNet.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="AFocalPoint.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ASoftParticleSystem.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneWarp.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="DnCinematic.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="dnclient.c">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="DnMesh.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="dnParentalLock.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="dnPlayerProfile.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="dnSaveLoad.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="dnScreenshot.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="DnTextureCanvas.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="network.c">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="palette.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\Render.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Rope.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="ULodMesh.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnActCol.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnActor.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnAudio.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnCamera.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnCamMgr.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnCanvas.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnCon.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnDynBsp.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEngine.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnFont.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnFPoly.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnGame.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnIn.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnLevAct.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnLevel.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnLevTic.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnLight.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnMain.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnMesh.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnMeshRn.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnModel.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnMover.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnObjEngine.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnParams.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnPath.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnPawn.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnPhysic.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnPlayer.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnPrim.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnRandom.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnReach.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnRender.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnRenderIterator.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnRoute.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnScript.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnScrTex.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnSoftLn.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnSpan.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnSprite.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnTest.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnTex.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnTrace.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnURL.cpp">
+      <Filter>Engine Src</Filter>
+    </ClCompile>
+    <ClCompile Include="flic.cpp">
+      <Filter>Engine Inc</Filter>
+    </ClCompile>
+    <ClCompile Include="UnBunch.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="UnChan.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="UnConn.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="UnDemoPenLev.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="UnDemoRec.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="UnNetDrv.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="UnPenLev.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Window\Src\Window.cpp">
+      <Filter>Window Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WinDrv\Src\WinClient.cpp">
+      <Filter>WinDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WinDrv\Src\WinDrv.cpp">
+      <Filter>WinDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WinDrv\Src\WinViewport.cpp">
+      <Filter>WinDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\InternetLink.cpp">
+      <Filter>IpDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\TcpLink.cpp">
+      <Filter>IpDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\TcpNetDriver.cpp">
+      <Filter>IpDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UdpLink.cpp">
+      <Filter>IpDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UMasterServerCommandlet.cpp">
+      <Filter>IpDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UnSocket.cpp">
+      <Filter>IpDrv Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UUpdateServerCommandlet.cpp">
+      <Filter>IpDrv Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\Inc\Core.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\DnExec.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FCodec.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FConfigCacheIni.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FFeedbackContextAnsi.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FFeedbackContextWindows.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FFileManagerAnsi.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FFileManagerGeneric.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FFileManagerLinux.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FFileManagerWindows.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FMallocAnsi.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FMallocDebug.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FMallocWindows.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceAnsiError.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceFile.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceNull.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceStdout.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceWindowsError.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\FRiffChunk.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\mail.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UExporter.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UFactory.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnArc.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnBits.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnBuild.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnCache.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnCId.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnClass.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnCoreNet.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnCorObj.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnFile.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnGnuG.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnLinker.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnMath.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnMem.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnMsg.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnName.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnNames.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnObjBas.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnObjVer.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnScript.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnStack.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnTemplate.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnType.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnUnix.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnVcWin32.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\UnVcWn32SSE.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Core\Inc\xtypes.h">
+      <Filter>Core Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\Src\Amd3d.h">
+      <Filter>Engine Src</Filter>
+    </ClInclude>
+    <ClInclude Include="EnginePrivate.h">
+      <Filter>Engine Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\Flic.h">
+      <Filter>Engine Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\Src\RenderPrivate.h">
+      <Filter>Engine Src</Filter>
+    </ClInclude>
+    <ClInclude Include="UnPath.h">
+      <Filter>Engine Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Render\Src\UnSpan.h">
+      <Filter>Engine Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\AActor.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ABeamSystem.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ABoneRope.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ABrush.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ACamera.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ACarcass.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ADoorMover.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ADukeNet.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\AFocalPoint.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\AGameReplicationInfo.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\AInventory.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Amd3d.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\AMover.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\APawn.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\APlayerPawn.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\APlayerReplicationInfo.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ARenderActor.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ASoftParticleSystem.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\AZoneInfo.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\DnCinematic.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\dnclient.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\DnMesh.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\DnMeshPrivate.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\DnTextureCanvas.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\Engine.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\EngineClasses.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\MeshBase.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\network.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\Palette.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="res\resource.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\Rope.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\S3tc.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\ULevelSummary.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnActor.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnAudio.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnCamera.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnCon.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnDDraw.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnDynBsp.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnEngine.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnEngineGnuG.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnEngineWin.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnGame.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnIn.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnLevel.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnMesh.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnMeshPrivate.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnModel.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnNetStuff.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnObj.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnPlayer.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnPrim.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnReach.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnRender.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnRenderIterator.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnRenDev.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnScrTex.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnTex.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnURL.h">
+      <Filter>Engine Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnBunch.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnChan.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnConn.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnDemoPenLev.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnDemoRec.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnNet.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnNetDrv.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UnPenLev.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\BINK.H">
+      <Filter>Bink</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\rad.h">
+      <Filter>Smacker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\smack.h">
+      <Filter>Smacker</Filter>
+    </ClInclude>
+    <ClInclude Include="Buildnum.h">
+      <Filter>SapiSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Spchtel.h">
+      <Filter>SapiSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Spchwrap.h">
+      <Filter>SapiSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Speech.h">
+      <Filter>SapiSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Window\Inc\Window.h">
+      <Filter>Window Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WinDrv\inc\WinDrv.h">
+      <Filter>WinDrv Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IpDrv\Src\UnSocket.h">
+      <Filter>IpDrv Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IpDrv\Inc\AInternetLink.h">
+      <Filter>IpDrv Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IpDrv\Inc\ATcpLink.h">
+      <Filter>IpDrv Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IpDrv\Inc\AUdpLink.h">
+      <Filter>IpDrv Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IpDrv\Inc\GameSpyClasses.h">
+      <Filter>IpDrv Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IpDrv\Inc\GameSpyClassesPublic.h">
+      <Filter>IpDrv Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IpDrv\Inc\IpDrvClasses.h">
+      <Filter>IpDrv Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Lib\binkw32.lib">
+      <Filter>Bink</Filter>
+    </Library>
+    <Library Include="..\Lib\smackw32.lib">
+      <Filter>Smacker</Filter>
+    </Library>
+    <Library Include="..\Lib\Spchwrap.lib">
+      <Filter>SapiSDK</Filter>
+    </Library>
+    <Library Include="..\Lib\s3tc.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\EngineRes.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Classes\Actor.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ActorDamageEffect.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ActorFreeze.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ActorImmolation.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\AlternatePath.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\AlwaysTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\AmbientSound.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Ambushpoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Ammo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\AnalogClockDispatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\AnimPlayer.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\AnyDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\BeamAnchor.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\BeamSystem.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\BiochemicalDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Bitmap.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\BlockAll.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\BlockedPath.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\BlockMonsters.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\BlockPlayer.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\BoneRope.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\BootSmashDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\BotPawn.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\BreakableGlass.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Brush.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\BulletDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ButtonMarker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Camera.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Canvas.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Carcass.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ClientBeaconReceiver.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ClipMarker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ColdDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Commandlet.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Console.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ConstraintJoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ControlRemapper.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Coordaxis.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Counter.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\CriticalEventMessage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\CriticalString.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\CrushingDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DamageType.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\DebugAnimView.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DebugView.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Decal.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\DecapitationDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Decoration.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DefensePoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\deleteme.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DigitalClockDispatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Dispatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Dispatchers.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\dnDecal.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\dnDecal_Delayed.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DoorHandle.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DoorMover.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\DOTAffector.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DOTTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\DrawActorMount.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\DrowningDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DukeNet.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\DukeVoice.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Effects.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ElectricalDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Engine.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Engine.upkg">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ExplosionDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\FallingDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\FireDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\FlareLight.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\FlicTexture.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\FocalPoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\FocusPoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\FogMorphDispatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\FontBaseBlargo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Fragment.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\GameInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\GameReplicationInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\GlassMover.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\GlassShatterEffect.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\HelloWorldCommandlet.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\HitPackage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\HitPackage_Decoration.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\HitPackage_Glass.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\HitPackage_GlassDir.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\HitPackage_Inventory.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\HitPackage_Level.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\HoldSpot.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\HomeBase.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\HUD.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Info.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\InfoActor.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Inpatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\InternalTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\InternetInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\InternetLink.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\InterpolationPoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\InterpolationStation.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Inventory.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\InventorySpot.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Item.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\KeyframeDispatch.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\KeyframeDispatchDispatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Keypoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\KillTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\KungFuDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\LaserBeam.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LevelInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LevelSummary.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LiftCenter.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LiftExit.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Light.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\Locale.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LocalMessage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\locationid.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LogicGate.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LookAtDispatch.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\MapList.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\MapLocations.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Material.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\MeshDecal.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\MeshEffect.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\MeshImmolation.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\MeshInstance.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Mover.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\MusicEvent.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\MusicTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Mutator.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\NavigationPoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\Object.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Palette.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ParticleCollisionActor.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ParticleSystem.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PathAttach.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PathNode.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PatrolPoint.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Pawn.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\PawnImmolation.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\PawnShrink.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PawnTrackingInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PeriodicTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Player.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PlayerCanSeeMe.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PlayerPawn.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PlayerReplicationInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PlayerStart.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\PoisonDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PolyMarker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Primitive.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ProceduralTexture.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Projectile.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Puppet.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PuppetIterator.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PuppetIteratorGlobal.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PuppetIteratorRadius.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\PuppetWorker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\QuestItem.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\QuestTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\RadiationDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\RandomDispatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\RenderActor.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ReplicationInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\RespawnMarker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\RotaryTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\RouletteWheelDispatcher.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\RoundRobin.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SavedMove.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ScaledSprite.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ScoreBoard.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Scout.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ScriptedTexture.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\ShrinkerDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SkyZoneInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\SmackerTexture.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SoftParticleAffector.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SoftParticleSystem.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SoftParticleSystemAssign.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SOSMessage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SpawnNotify.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SpecialEvent.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Spotlight.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SpriteManager.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\StaticTexture.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\SteroidBurnoutDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\StringMessage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\Subsystem.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SuicideDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\TcpLink.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Teleporter.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\TentacleDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TestMeshEffect.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Texture.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TextureCanvas.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\thirdpersondecoration.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\Time.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Trigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerAnim.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerArrangeActors.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerAssign.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerDestroy.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerEtherial.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerExternalForce.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerFlic.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerForward.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerFOV.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerLight.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerLightStyle.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerMarker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerMaterial.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerMeshChannel.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerMount.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerPortal.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerRelay.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Triggers.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerSelfForward.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerSetPhysics.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerSlomo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerSmacker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerSpawn.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerTextureCanvas.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerTimeWarp.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerToggleExistance.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerToggleHidden.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerTransmission.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TriggerZoneAssign.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\UdpBeacon.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\UdpLink.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\UniqueTextureBank.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Variable.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\VariableModify.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\VoicePack.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\WarpZoneInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\WarpZoneMarker.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\WayBeacon.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Weapon.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\WhippedDownDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\WhippedLeftDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\classes\WhippedRightDamage.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ZoneInfo.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ZoneTrigger.uc">
+      <Filter>Engine Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\System\Engine.int">
+      <Filter>Int</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\IpDrv\Classes\ClientBeaconReceiver.uc">
+      <Filter>IPDrv Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\IpDrv\Classes\InternetLink.uc">
+      <Filter>IPDrv Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\IpDrv\Classes\TcpLink.uc">
+      <Filter>IPDrv Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\IpDrv\Classes\UdpBeacon.uc">
+      <Filter>IPDrv Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\IpDrv\Classes\UdpLink.uc">
+      <Filter>IPDrv Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\IpServer\Classes\UdpServerQuery.uc">
+      <Filter>IPServer Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\IpServer\Classes\UdpServerUplink.uc">
+      <Filter>IPServer Classes</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

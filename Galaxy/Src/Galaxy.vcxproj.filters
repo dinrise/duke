@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{fa1ebe1b-e39f-4a51-8ce1-5799a477abf5}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Miles6">
+      <UniqueIdentifier>{96e0f76c-908e-4fb2-a8ad-584a0ec534ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="A3D.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnGalaxy.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="A3D.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GalaxyLib\Hdr\Galaxy.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="ia3dapi.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Mss.h">
+      <Filter>Miles6</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Mss32.lib">
+      <Filter>Miles6</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

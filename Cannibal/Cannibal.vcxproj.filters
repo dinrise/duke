@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Kernel">
+      <UniqueIdentifier>{0716e396-8be9-4c48-8d30-c127e9791a2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mathematics">
+      <UniqueIdentifier>{ed90625e-94f4-4092-9509-2b026753b518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logging">
+      <UniqueIdentifier>{88909721-9b62-401d-943f-37d4088df9e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timing">
+      <UniqueIdentifier>{bb4c2711-f5d6-4d22-998b-82c0c570ca85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{59a1bec4-5efb-458c-966f-46f4bf3263ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{02a34480-5626-41f2-bc40-beba8ac14ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parsing">
+      <UniqueIdentifier>{7e317fec-31ea-4391-a76a-00b5282453ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{c028a5fa-6993-4452-839a-c25adc642247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{703b85df-5d00-48c6-88f9-23abeb1377c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{e64a2f91-fa9b-4289-9e61-5e013864141c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Project Files">
+      <UniqueIdentifier>{8654e177-28c7-4c7e-8b36-154d13be7243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Model Actors">
+      <UniqueIdentifier>{a08310da-6086-4627-8051-90136141e45b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\Model Actors\Res">
+      <UniqueIdentifier>{a7782b94-4301-4ef0-938b-e4072987f0b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{36cc95c8-8c3c-46da-a364-7ab9e400ea6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{fb8c18fd-096b-4c40-9e6f-7c6581ce8259}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CorMain.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="Kernel.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="StrMain.cpp">
+      <Filter>Kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="LogMain.cpp">
+      <Filter>Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeMain.cpp">
+      <Filter>Timing</Filter>
+    </ClCompile>
+    <ClCompile Include="MemMain.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="FileBox.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileMain.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LexMain.cpp">
+      <Filter>Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="PrsMain.cpp">
+      <Filter>Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgMain.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMain.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="InMain.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="InWin.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjFrm.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjGeo.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjLod.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjMac.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjMain.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjProj.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjSeq.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjSkl.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CpjSrf.cpp">
+      <Filter>Models\Project Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MacEdit.cpp">
+      <Filter>Models\Model Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="MacMain.cpp">
+      <Filter>Models\Model Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="PlgMain.cpp">
+      <Filter>Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="IpcMain.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="WinCtrl.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CorMain.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="Kernel.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="KrnBuild.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="KrnDefs.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="KrnInc.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="KrnTypes.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="StrMain.h">
+      <Filter>Kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="MathFlt.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="VecMain.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="VecPrim.h">
+      <Filter>Mathematics</Filter>
+    </ClInclude>
+    <ClInclude Include="LogMain.h">
+      <Filter>Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeMain.h">
+      <Filter>Timing</Filter>
+    </ClInclude>
+    <ClInclude Include="MemMain.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="FileBox.h">
+      <Filter>Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileMain.h">
+      <Filter>Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LexMain.h">
+      <Filter>Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="PrsMain.h">
+      <Filter>Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgMain.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMain.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="InDefs.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InMain.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="InWin.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjFmt.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjFrm.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjGeo.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjLod.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjMac.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjMain.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjProj.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjSeq.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjSkl.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CpjSrf.h">
+      <Filter>Models\Project Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Res\resource.h">
+      <Filter>Models\Model Actors\Res</Filter>
+    </ClInclude>
+    <ClInclude Include="MacEdit.h">
+      <Filter>Models\Model Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="MacMain.h">
+      <Filter>Models\Model Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="PlgMain.h">
+      <Filter>Plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="IpcMain.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="WinCtrl.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Cannibal.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\CpjCpj.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\CpjFrm.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\CpjGeo.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\CpjLod.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\CpjMac.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\CpjSeq.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\CpjSkl.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\CpjSrf.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\FileClosed.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+    <Image Include="Res\FileOpen.bmp">
+      <Filter>Models\Model Actors\Res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Res\MacEdit.rc">
+      <Filter>Models\Model Actors\Res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="msg.asm">
+      <Filter>Kernel</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

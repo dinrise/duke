@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{4d127b7f-20ae-48aa-b364-26f2ff6dc5f9}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4cafb89b-f4ad-4c6e-bf99-ca441654a5f7}</UniqueIdentifier>
+      <Extensions>*.uc</Extensions>
+    </Filter>
+    <Filter Include="Inc">
+      <UniqueIdentifier>{59ff1932-9774-47d0-8a72-3e024326d5b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Int">
+      <UniqueIdentifier>{9c365d40-bf00-425e-9527-e435824031c7}</UniqueIdentifier>
+      <Extensions>*.int</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CoolBsp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="EdHook.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="TTFontImport.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UBatchExportCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UBrushBuilder.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UConformCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UKillUnrealCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UMakeCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UMapConvertCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UMasterCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UMergeDXTCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnBsp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdAct.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdCam.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdClick.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdCnst.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdCsg.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdExp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdFact.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEditor.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdRend.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdSrv.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnEdTran.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnMeshEd.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnMeshLP.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnParams.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnScrCom.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnShadow.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnSyntax.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnTopics.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UnVisi.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="UTextureCheckCommandlet.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorPrivate.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="UnEdTran.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="UnScrCom.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="UnTopics.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\Editor.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\EditorClasses.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Inc\UBrushBuilder.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Classes\BrushBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\ConeBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\CubeBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\CurvedStairBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\CylinderBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Editor.upkg">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\EditorEngine.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\LinearStairBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Options2DShaper.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Options2DShaperBezierDetail.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Options2DShaperExtrude.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Options2DShaperExtrudeToBevel.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Options2DShaperExtrudeToPoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Options2DShaperRevolve.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\Options2DShaperSheet.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\OptionsBrushScale.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\OptionsProxy.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\OptionsSurfBevel.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\OptionsTexAlign.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\OptionsTexAlignFace.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\OptionsTexAlignPlanar.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SheetBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\SpiralStairBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TerrainBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\TetrahedronBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Classes\VolumetricBuilder.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\System\Editor.int">
+      <Filter>Int</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

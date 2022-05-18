@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Duke4_UT400/UBrowser/Src", ZUJAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{531188C1-F8EE-4376-A758-A378A90FE73A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PreprocessorDefinitions>_WINDOWS;_MBCS;_USRDLL;UBROWSER_EXPORTS;UNICODE;_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\UBrowser.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\UBrowser.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\UBrowser.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Debug\UBrowser.dll</OutputFile>
+      <ImportLibrary>.\Debug\UBrowser.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_MBCS;_USRDLL;UBROWSER_EXPORTS;NDEBUG;_WINDOWS;WIN32;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\UBrowser.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\UBrowser.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\UBrowser.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\UBrowser.dll</OutputFile>
+      <ImportLibrary>.\Release\UBrowser.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Classes\UBrowser.upkg" />
+    <CustomBuild Include="..\Classes\UBrowserBannerAd.uc" />
+    <CustomBuild Include="..\Classes\UBrowserBannerBar.uc" />
+    <CustomBuild Include="..\Classes\UBrowserBrowserButton.uc" />
+    <CustomBuild Include="..\Classes\UBrowserBufferedTCPLink.uc" />
+    <CustomBuild Include="..\Classes\UBrowserColorIRCTextArea.uc" />
+    <CustomBuild Include="..\Classes\UBrowserConsole.uc" />
+    <CustomBuild Include="..\Classes\UBrowserEditFavoriteCW.uc" />
+    <CustomBuild Include="..\Classes\UBrowserEditFavoriteWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserFavoriteServers.uc" />
+    <CustomBuild Include="..\Classes\UBrowserFavoritesFact.uc" />
+    <CustomBuild Include="..\Classes\UBrowserFavoritesMenu.uc" />
+    <CustomBuild Include="..\Classes\UBrowserGSpyFact.uc" />
+    <CustomBuild Include="..\Classes\UBrowserGSpyLink.uc" />
+    <CustomBuild Include="..\Classes\UBrowserHTTPClient.uc" />
+    <CustomBuild Include="..\Classes\UBrowserHTTPFact.uc" />
+    <CustomBuild Include="..\Classes\UBrowserHTTPLink.uc" />
+    <CustomBuild Include="..\Classes\UBrowserInfoClientWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserInfoMenu.uc" />
+    <CustomBuild Include="..\Classes\UBrowserInfoWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCChannelMenu.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCChannelPage.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCJoinMenu.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCLink.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCPageBase.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCPrivateMenu.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCPrivPage.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCSetupClient.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCSystemMenu.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCSystemPage.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCTextArea.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCUserList.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCUserListBox.uc" />
+    <CustomBuild Include="..\Classes\UBrowserIRCWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserLocalFact.uc" />
+    <CustomBuild Include="..\Classes\UBrowserLocalLink.uc" />
+    <CustomBuild Include="..\Classes\UBrowserMainClientWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserMainWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserNewFavoriteCW.uc" />
+    <CustomBuild Include="..\Classes\UBrowserNewFavoriteWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserOpenCW.uc" />
+    <CustomBuild Include="..\Classes\UBrowserOpenWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserPlayerGrid.uc" />
+    <CustomBuild Include="..\Classes\UBrowserPlayerList.uc" />
+    <CustomBuild Include="..\Classes\UBrowserRightClickMenu.uc" />
+    <CustomBuild Include="..\Classes\UBrowserRootWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserRulesGrid.uc" />
+    <CustomBuild Include="..\Classes\UBrowserRulesList.uc" />
+    <CustomBuild Include="..\Classes\UBrowserScreenshotCW.uc" />
+    <CustomBuild Include="..\Classes\UBrowserServerGrid.uc" />
+    <CustomBuild Include="..\Classes\UBrowserServerList.uc" />
+    <CustomBuild Include="..\Classes\UBrowserServerListFactory.uc" />
+    <CustomBuild Include="..\Classes\UBrowserServerListWindow.uc" />
+    <CustomBuild Include="..\Classes\UBrowserServerPing.uc" />
+    <CustomBuild Include="..\Classes\UBrowserSubsetFact.uc" />
+    <CustomBuild Include="..\Classes\UBrowserSubsetList.uc" />
+    <CustomBuild Include="..\Classes\UBrowserSupersetList.uc" />
+    <CustomBuild Include="..\Classes\UBrowserUpdateServerLink.uc" />
+    <CustomBuild Include="..\Classes\UBrowserUpdateServerTextArea.uc" />
+    <CustomBuild Include="..\Classes\UBrowserUpdateServerWindow.uc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

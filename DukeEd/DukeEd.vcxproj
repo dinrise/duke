@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Duke4_UT400/DukeEd", SSNAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{ECC96B32-D3F5-4A6A-9C1F-8E391258B8AF}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\DirectX8\Inc;..\xcore;..\Core\Inc;..\Engine\Inc;..\Window\Inc;..\Editor\Inc;Inc;Inc\Bugslayer;..\Engine\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;UNICODE;WIN32;_WIN32_IE=0x0200;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\DukeEd.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\DukeEd.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\DukeEd.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\System\DukeEd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\DirectX8\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <BaseAddress>0x10E00000</BaseAddress>
+      <AdditionalDependencies>comctl32.lib;..\Engine\Lib\Engine.lib;..\Editor\Lib\Editor.lib;BugslayerUtil.lib;winmm.lib;..\Cannibal\Release\Cannibal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\DirectX8\Inc;..\xcore;..\Core\Inc;..\Engine\Inc;..\Window\Inc;..\Editor\Inc;Inc;Inc\Bugslayer;..\Engine\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;UNICODE;WIN32;_WIN32_IE=0x0200;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\DukeEd.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\DukeEd.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\DukeEd.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\System\DukeEd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\DirectX8\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <BaseAddress>0x10E00000</BaseAddress>
+      <AdditionalDependencies>comctl32.lib;..\Engine\Lib\Engine.lib;..\Editor\Lib\Editor.lib;BugslayerUtil.lib;winmm.lib;..\Cannibal\Release\Cannibal.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Src\Res\DukeEd.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Src\Res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Src\Res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Inc\BottomBar.h" />
+    <ClInclude Include="Inc\Browser.h" />
+    <ClInclude Include="Inc\BrowserActor.h" />
+    <ClInclude Include="Inc\BrowserGroup.h" />
+    <ClInclude Include="Inc\BrowserMaster.h" />
+    <ClInclude Include="Inc\BrowserMesh.h" />
+    <ClInclude Include="Inc\BrowserMusic.h" />
+    <ClInclude Include="Inc\BrowserSound.h" />
+    <ClInclude Include="Inc\BrowserTexture.h" />
+    <ClInclude Include="Inc\Bugslayer\BugslayerUtil.h" />
+    <ClInclude Include="Inc\Bugslayer\CrashHandler.h" />
+    <ClInclude Include="Inc\Bugslayer\CriticalSection.h" />
+    <ClInclude Include="Inc\Bugslayer\DiagAssert.h" />
+    <ClInclude Include="Inc\Bugslayer\MemDumperValidator.h" />
+    <ClInclude Include="Inc\Bugslayer\MemStress.h" />
+    <ClInclude Include="Inc\Bugslayer\MSJDBG.h" />
+    <ClInclude Include="Inc\Bugslayer\PSAPI.H" />
+    <ClInclude Include="Inc\Bugslayer\SymbolEngine.h" />
+    <ClInclude Include="Inc\Bugslayer\WarningsOff.h" />
+    <ClInclude Include="Inc\Bugslayer\WarningsOn.h" />
+    <ClInclude Include="Inc\BuildPropSheet.h" />
+    <ClInclude Include="Inc\ButtonBar.h" />
+    <ClInclude Include="Inc\CodeFrame.h" />
+    <ClInclude Include="Inc\DlgAddSpecial.h" />
+    <ClInclude Include="Inc\DlgBevel.h" />
+    <ClInclude Include="Inc\DlgBrushBuilder.h" />
+    <ClInclude Include="Inc\DlgBrushImport.h" />
+    <ClInclude Include="Inc\DlgBuildOptions.h" />
+    <ClInclude Include="Inc\DlgDepth.h" />
+    <ClInclude Include="Inc\DlgGeneric.h" />
+    <ClInclude Include="Inc\DlgMapError.h" />
+    <ClInclude Include="Inc\DlgMapImport.h" />
+    <ClInclude Include="Inc\DlgProgress.h" />
+    <ClInclude Include="Inc\DlgRename.h" />
+    <ClInclude Include="Inc\DlgScaleLights.h" />
+    <ClInclude Include="Inc\DlgSearchActors.h" />
+    <ClInclude Include="Inc\DlgTexProp.h" />
+    <ClInclude Include="Inc\DlgTexReplace.h" />
+    <ClInclude Include="Inc\DlgTexUsage.h" />
+    <ClInclude Include="Inc\DlgViewportConfig.h" />
+    <ClInclude Include="Inc\Extern.h" />
+    <ClInclude Include="Inc\MRUList.h" />
+    <ClInclude Include="Inc\SurfacePropSheet.h" />
+    <ClInclude Include="Inc\TerrainEditSheet.h" />
+    <ClInclude Include="Inc\TopBar.h" />
+    <ClInclude Include="Inc\TwoDeeShapeEditor.h" />
+    <ClInclude Include="Inc\ViewportFrame.h" />
+    <ClInclude Include="Src\Res\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Src\Res\bb_grid1.bmp" />
+    <Image Include="Src\Res\bb_lock1.bmp" />
+    <Image Include="Src\Res\bb_log_w.bmp" />
+    <Image Include="Src\Res\bb_rotat.bmp" />
+    <Image Include="Src\Res\bb_vtx_s.bmp" />
+    <Image Include="Src\Res\bb_zoomc.bmp" />
+    <Image Include="Src\Res\bmp00001.bmp" />
+    <Image Include="Src\Res\bmp00002.bmp" />
+    <Image Include="Src\Res\bmp00003.bmp" />
+    <Image Include="Src\Res\bmp00004.bmp" />
+    <Image Include="Src\Res\bmp00005.bmp" />
+    <Image Include="Src\Res\bmp00006.bmp" />
+    <Image Include="Src\Res\bmp00007.bmp" />
+    <Image Include="Src\Res\bmp00008.bmp" />
+    <Image Include="Src\Res\bmp00009.bmp" />
+    <Image Include="Src\Res\bmp00010.bmp" />
+    <Image Include="Src\Res\bmp00011.bmp" />
+    <Image Include="Src\Res\bmp00012.bmp" />
+    <Image Include="Src\Res\bmp00013.bmp" />
+    <Image Include="Src\Res\bmp00014.bmp" />
+    <Image Include="Src\Res\bmp00015.bmp" />
+    <Image Include="Src\Res\bmp00016.bmp" />
+    <Image Include="Src\Res\bmp00017.bmp" />
+    <Image Include="Src\Res\bmp00018.bmp" />
+    <Image Include="Src\Res\bmp00019.bmp" />
+    <Image Include="Src\Res\bmp00020.bmp" />
+    <Image Include="Src\Res\bmp00021.bmp" />
+    <Image Include="Src\Res\bmp00022.bmp" />
+    <Image Include="Src\Res\bmp00023.bmp" />
+    <Image Include="Src\Res\bmp00024.bmp" />
+    <Image Include="Src\Res\bmp00025.bmp" />
+    <Image Include="Src\Res\bmp00026.bmp" />
+    <Image Include="Src\Res\bmp00027.bmp" />
+    <Image Include="Src\Res\bmp00028.bmp" />
+    <Image Include="Src\Res\browsers.bmp" />
+    <Image Include="Src\Res\browsert.bmp" />
+    <Image Include="Src\Res\cf_toolb.bmp" />
+    <Image Include="Src\Res\Duke.ico" />
+    <Image Include="Src\Res\Icon.bmp" />
+    <Image Include="Src\Res\icon1.ico" />
+    <Image Include="Src\Res\idbm_2ds.bmp" />
+    <Image Include="Src\Res\idbm_add.bmp" />
+    <Image Include="Src\Res\idbm_bui.bmp" />
+    <Image Include="Src\Res\idbm_buildall.bmp" />
+    <Image Include="Src\Res\idbm_cam.bmp" />
+    <Image Include="Src\Res\idbm_che.bmp" />
+    <Image Include="Src\Res\idbm_del.bmp" />
+    <Image Include="Src\Res\idbm_dow.bmp" />
+    <Image Include="Src\Res\idbm_edi.bmp" />
+    <Image Include="Src\Res\idbm_fil.bmp" />
+    <Image Include="Src\Res\idbm_mes.bmp" />
+    <Image Include="Src\Res\Idbm_mus.bmp" />
+    <Image Include="Src\Res\idbm_new.bmp" />
+    <Image Include="Src\Res\idbm_pla.bmp" />
+    <Image Include="Src\Res\idbm_sur.bmp" />
+    <Image Include="Src\Res\idbm_tex.bmp" />
+    <Image Include="Src\Res\idbm_unr.bmp" />
+    <Image Include="Src\Res\idbm_vie.bmp" />
+    <Image Include="Src\Res\Logo.bmp" />
+    <Image Include="Src\Res\Toolbar.bmp" />
+    <Image Include="Src\Res\toolbar1.bmp" />
+    <Image Include="Src\Res\Unreal.ico" />
+    <Image Include="Src\Res\UnrealEd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Editor\Src\Editor.vcxproj">
+      <Project>{4288531f-b9fa-4ae8-bf80-72bab7d3f73b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Src\Engine.vcxproj">
+      <Project>{2e76a32e-ed92-4eed-b371-66d7598fd071}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

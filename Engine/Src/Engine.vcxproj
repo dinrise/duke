@@ -1,0 +1,1174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Duke4_UT400/Engine", KGJAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <ProjectGuid>{2E76A32E-ED92-4EED-B371-66D7598FD071}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\Lib\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\Lib\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <IncludePath>C:\mssdk8\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\mssdk8\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\..\DirectX8\Inc;..\..\xcore;..\..\Core\Inc;..\..\Engine\Inc;..\..\Render\Inc;..\..\WinDrv\Inc;..\..\Window\Inc;..\..\IpDrv\Inc;..\..\IpDrv\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CORE_API=__declspec(dllexport);ENGINE_API=__declspec(dllexport);WINDOW_API=__declspec(dllexport);WINDRV_API=__declspec(dllexport);IPDRV_API=__declspec(dllexport);_WINDOWS;UNICODE;_DEBUG;WIN32;_WIN32_IE=0x0200;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\Engine.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>EnginePrivate.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <AdditionalOptions> /D /Zm256 </AdditionalOptions>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\Lib\Engine.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\Lib\Engine.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\System\Engine.dll</OutputFile>
+      <ImportLibrary>.\..\Lib\Engine.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\DirectX8\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <BaseAddress>0x10300000</BaseAddress>
+      <AdditionalDependencies>..\..\xcore\xcore.lib;..\lib\spchwrap.lib;comctl32.lib;dinput8.lib;dxguid.lib;winmm.lib;..\Lib\s3tc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>..\..\DirectX8\Inc;..\..\xcore;..\..\Core\Inc;..\..\Engine\Inc;..\..\Render\Inc;..\..\WinDrv\Inc;..\..\Window\Inc;..\..\IpDrv\Inc;..\..\IpDrv\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CORE_API=__declspec(dllexport);ENGINE_API=__declspec(dllexport);WINDOW_API=__declspec(dllexport);WINDRV_API=__declspec(dllexport);IPDRV_API=__declspec(dllexport);_WINDOWS;NDEBUG;UNICODE;WIN32;_WIN32_IE=0x0200;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Release\Engine.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>EnginePrivate.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalOptions> /Zm256 </AdditionalOptions>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\Lib\Engine.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <RedirectOutputAndErrors>NUL</RedirectOutputAndErrors>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\Lib\Engine.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>..\..\System\Engine.dll</OutputFile>
+      <ImportLibrary>.\..\Lib\Engine.lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\DirectX8\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <BaseAddress>0x10300000</BaseAddress>
+      <AdditionalDependencies>..\..\xcore\xcore.lib;..\lib\spchwrap.lib;comctl32.lib;dinput8.lib;dxguid.lib;winmm.lib;..\Lib\s3tc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Core\Src\DnExec.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\mail.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UExporter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UFactory.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnAnsi.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnBits.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnCache.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnClass.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnCoreNet.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnCorSc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnLinker.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnMath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnMem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnMisc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnName.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnObj.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnProp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Core\Src\UnVcWin32.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\InternetLink.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\TcpLink.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\TcpNetDriver.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UdpLink.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UMasterServerCommandlet.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UnSocket.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\IpDrv\Src\UUpdateServerCommandlet.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\Render.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnLight.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnMeshRn.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnRandom.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnRender.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnSoftLn.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnSpan.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnSprite.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Render\Src\UnTest.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Window\Src\Window.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\WinDrv\Src\WinClient.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\WinDrv\Src\WinDrv.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\WinDrv\Src\WinViewport.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ABeamSystem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ABreakableGlass.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ADukeNet.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="AFocalPoint.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ASoftParticleSystem.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="BoneWarp.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DnCinematic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dnclient.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DnMesh.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dnParentalLock.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dnPlayerProfile.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dnSaveLoad.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="dnScreenshot.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="DnTextureCanvas.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="flic.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="network.c">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level3</WarningLevel>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level3</WarningLevel>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="palette.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="Rope.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="ULodMesh.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnActCol.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnActor.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnAudio.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnBunch.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnCamera.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnCamMgr.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnCanvas.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnChan.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnCon.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnConn.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnDemoPenLev.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnDemoRec.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnDynBsp.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnEngine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnFont.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnFPoly.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnGame.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnIn.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnLevAct.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnLevel.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnLevTic.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnMain.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnMesh.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnModel.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnMover.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnNetDrv.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnObjEngine.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnParams.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnPath.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnPawn.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnPenLev.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnPhysic.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnPlayer.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnPrim.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnReach.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnRenderIterator.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnRoute.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnScript.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnScrTex.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Engine\Src\EnginePrivate.h</PrecompiledHeaderFile>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnTex.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnTrace.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="UnURL.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> /D /Zm256   /D /Zm256 </AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> /Zm256   /Zm256 </AdditionalOptions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Core\Inc\Core.h" />
+    <ClInclude Include="..\..\Core\Inc\DnExec.h" />
+    <ClInclude Include="..\..\Core\Inc\FCodec.h" />
+    <ClInclude Include="..\..\Core\Inc\FConfigCacheIni.h" />
+    <ClInclude Include="..\..\Core\Inc\FFeedbackContextAnsi.h" />
+    <ClInclude Include="..\..\Core\Inc\FFeedbackContextWindows.h" />
+    <ClInclude Include="..\..\Core\Inc\FFileManagerAnsi.h" />
+    <ClInclude Include="..\..\Core\Inc\FFileManagerGeneric.h" />
+    <ClInclude Include="..\..\Core\Inc\FFileManagerLinux.h" />
+    <ClInclude Include="..\..\Core\Inc\FFileManagerWindows.h" />
+    <ClInclude Include="..\..\Core\Inc\FMallocAnsi.h" />
+    <ClInclude Include="..\..\Core\Inc\FMallocDebug.h" />
+    <ClInclude Include="..\..\Core\Inc\FMallocWindows.h" />
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceAnsiError.h" />
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceFile.h" />
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceNull.h" />
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceStdout.h" />
+    <ClInclude Include="..\..\Core\Inc\FOutputDeviceWindowsError.h" />
+    <ClInclude Include="..\..\Core\Inc\FRiffChunk.h" />
+    <ClInclude Include="..\..\Core\Inc\mail.h" />
+    <ClInclude Include="..\..\Core\Inc\UExporter.h" />
+    <ClInclude Include="..\..\Core\Inc\UFactory.h" />
+    <ClInclude Include="..\..\Core\Inc\UnArc.h" />
+    <ClInclude Include="..\..\Core\Inc\UnBits.h" />
+    <ClInclude Include="..\..\Core\Inc\UnBuild.h" />
+    <ClInclude Include="..\..\Core\Inc\UnCache.h" />
+    <ClInclude Include="..\..\Core\Inc\UnCId.h" />
+    <ClInclude Include="..\..\Core\Inc\UnClass.h" />
+    <ClInclude Include="..\..\Core\Inc\UnCoreNet.h" />
+    <ClInclude Include="..\..\Core\Inc\UnCorObj.h" />
+    <ClInclude Include="..\..\Core\Inc\UnFile.h" />
+    <ClInclude Include="..\..\Core\Inc\UnGnuG.h" />
+    <ClInclude Include="..\..\Core\Inc\UnLinker.h" />
+    <ClInclude Include="..\..\Core\Inc\UnMath.h" />
+    <ClInclude Include="..\..\Core\Inc\UnMem.h" />
+    <ClInclude Include="..\..\Core\Inc\UnMsg.h" />
+    <ClInclude Include="..\..\Core\Inc\UnName.h" />
+    <ClInclude Include="..\..\Core\Inc\UnNames.h" />
+    <ClInclude Include="..\..\Core\Inc\UnObjBas.h" />
+    <ClInclude Include="..\..\Core\Inc\UnObjVer.h" />
+    <ClInclude Include="..\..\Core\Inc\UnScript.h" />
+    <ClInclude Include="..\..\Core\Inc\UnStack.h" />
+    <ClInclude Include="..\..\Core\Inc\UnTemplate.h" />
+    <ClInclude Include="..\..\Core\Inc\UnType.h" />
+    <ClInclude Include="..\..\Core\Inc\UnUnix.h" />
+    <ClInclude Include="..\..\Core\Inc\UnVcWin32.h" />
+    <ClInclude Include="..\..\Core\Inc\UnVcWn32SSE.h" />
+    <ClInclude Include="..\..\Core\Inc\xtypes.h" />
+    <ClInclude Include="..\..\IpDrv\Inc\AInternetLink.h" />
+    <ClInclude Include="..\..\IpDrv\Inc\ATcpLink.h" />
+    <ClInclude Include="..\..\IpDrv\Inc\AUdpLink.h" />
+    <ClInclude Include="..\..\IpDrv\Inc\GameSpyClasses.h" />
+    <ClInclude Include="..\..\IpDrv\Inc\GameSpyClassesPublic.h" />
+    <ClInclude Include="..\..\IpDrv\Inc\IpDrvClasses.h" />
+    <ClInclude Include="..\..\IpDrv\Src\UnSocket.h" />
+    <ClInclude Include="..\..\Render\Src\Amd3d.h" />
+    <ClInclude Include="..\..\Render\Src\RenderPrivate.h" />
+    <ClInclude Include="..\..\Render\Src\UnSpan.h" />
+    <ClInclude Include="..\..\Window\Inc\Window.h" />
+    <ClInclude Include="..\..\WinDrv\inc\WinDrv.h" />
+    <ClInclude Include="..\Inc\AActor.h" />
+    <ClInclude Include="..\Inc\ABeamSystem.h" />
+    <ClInclude Include="..\Inc\ABoneRope.h" />
+    <ClInclude Include="..\Inc\ABrush.h" />
+    <ClInclude Include="..\Inc\ACamera.h" />
+    <ClInclude Include="..\Inc\ACarcass.h" />
+    <ClInclude Include="..\Inc\ADoorMover.h" />
+    <ClInclude Include="..\Inc\ADukeNet.h" />
+    <ClInclude Include="..\Inc\AFocalPoint.h" />
+    <ClInclude Include="..\Inc\AGameReplicationInfo.h" />
+    <ClInclude Include="..\Inc\AInventory.h" />
+    <ClInclude Include="..\Inc\AMover.h" />
+    <ClInclude Include="..\Inc\APawn.h" />
+    <ClInclude Include="..\Inc\APlayerPawn.h" />
+    <ClInclude Include="..\Inc\APlayerReplicationInfo.h" />
+    <ClInclude Include="..\Inc\ARenderActor.h" />
+    <ClInclude Include="..\Inc\ASoftParticleSystem.h" />
+    <ClInclude Include="..\Inc\AZoneInfo.h" />
+    <ClInclude Include="..\Inc\BINK.H" />
+    <ClInclude Include="..\Inc\DnCinematic.h" />
+    <ClInclude Include="..\Inc\dnclient.h" />
+    <ClInclude Include="..\Inc\DnMesh.h" />
+    <ClInclude Include="..\Inc\DnMeshPrivate.h" />
+    <ClInclude Include="..\Inc\DnTextureCanvas.h" />
+    <ClInclude Include="..\Inc\Engine.h" />
+    <ClInclude Include="..\Inc\EngineClasses.h" />
+    <ClInclude Include="..\Inc\Flic.h" />
+    <ClInclude Include="..\Inc\MeshBase.h" />
+    <ClInclude Include="..\Inc\network.h" />
+    <ClInclude Include="..\Inc\Palette.h" />
+    <ClInclude Include="..\Inc\rad.h" />
+    <ClInclude Include="..\Inc\Rope.h" />
+    <ClInclude Include="..\Inc\S3tc.h" />
+    <ClInclude Include="..\Inc\smack.h" />
+    <ClInclude Include="..\Inc\ULevelSummary.h" />
+    <ClInclude Include="..\Inc\UnActor.h" />
+    <ClInclude Include="..\Inc\UnAudio.h" />
+    <ClInclude Include="..\Inc\UnBunch.h" />
+    <ClInclude Include="..\Inc\UnCamera.h" />
+    <ClInclude Include="..\Inc\UnChan.h" />
+    <ClInclude Include="..\Inc\UnCon.h" />
+    <ClInclude Include="..\Inc\UnConn.h" />
+    <ClInclude Include="..\Inc\UnDDraw.h" />
+    <ClInclude Include="..\Inc\UnDemoPenLev.h" />
+    <ClInclude Include="..\Inc\UnDemoRec.h" />
+    <ClInclude Include="..\Inc\UnDynBsp.h" />
+    <ClInclude Include="..\Inc\UnEngine.h" />
+    <ClInclude Include="..\Inc\UnEngineGnuG.h" />
+    <ClInclude Include="..\Inc\UnEngineWin.h" />
+    <ClInclude Include="..\Inc\UnGame.h" />
+    <ClInclude Include="..\Inc\UnIn.h" />
+    <ClInclude Include="..\Inc\UnLevel.h" />
+    <ClInclude Include="..\Inc\UnMesh.h" />
+    <ClInclude Include="..\Inc\UnMeshPrivate.h" />
+    <ClInclude Include="..\Inc\UnModel.h" />
+    <ClInclude Include="..\Inc\UnNet.h" />
+    <ClInclude Include="..\Inc\UnNetDrv.h" />
+    <ClInclude Include="..\Inc\UnNetStuff.h" />
+    <ClInclude Include="..\Inc\UnObj.h" />
+    <ClInclude Include="..\Inc\UnPenLev.h" />
+    <ClInclude Include="..\Inc\UnPlayer.h" />
+    <ClInclude Include="..\Inc\UnPrim.h" />
+    <ClInclude Include="..\Inc\UnReach.h" />
+    <ClInclude Include="..\Inc\UnRender.h" />
+    <ClInclude Include="..\Inc\UnRenderIterator.h" />
+    <ClInclude Include="..\Inc\UnRenDev.h" />
+    <ClInclude Include="..\Inc\UnScrTex.h" />
+    <ClInclude Include="..\Inc\UnTex.h" />
+    <ClInclude Include="..\Inc\UnURL.h" />
+    <ClInclude Include="Amd3d.h" />
+    <ClInclude Include="Buildnum.h" />
+    <ClInclude Include="EnginePrivate.h" />
+    <ClInclude Include="res\resource.h" />
+    <ClInclude Include="Spchtel.h" />
+    <ClInclude Include="Spchwrap.h" />
+    <ClInclude Include="Speech.h" />
+    <ClInclude Include="UnPath.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\IpDrv\Classes\ClientBeaconReceiver.uc" />
+    <CustomBuild Include="..\..\IpDrv\Classes\InternetLink.uc" />
+    <CustomBuild Include="..\..\IpDrv\Classes\TcpLink.uc" />
+    <CustomBuild Include="..\..\IpDrv\Classes\UdpBeacon.uc" />
+    <CustomBuild Include="..\..\IpDrv\Classes\UdpLink.uc" />
+    <CustomBuild Include="..\..\IpServer\Classes\UdpServerQuery.uc" />
+    <CustomBuild Include="..\..\IpServer\Classes\UdpServerUplink.uc" />
+    <CustomBuild Include="..\..\System\Engine.int" />
+    <CustomBuild Include="..\Classes\Actor.uc" />
+    <CustomBuild Include="..\classes\ActorDamageEffect.uc" />
+    <CustomBuild Include="..\classes\ActorFreeze.uc" />
+    <CustomBuild Include="..\classes\ActorImmolation.uc" />
+    <CustomBuild Include="..\Classes\AlternatePath.uc" />
+    <CustomBuild Include="..\Classes\AlwaysTrigger.uc" />
+    <CustomBuild Include="..\Classes\AmbientSound.uc" />
+    <CustomBuild Include="..\Classes\Ambushpoint.uc" />
+    <CustomBuild Include="..\Classes\Ammo.uc" />
+    <CustomBuild Include="..\Classes\AnalogClockDispatcher.uc" />
+    <CustomBuild Include="..\Classes\AnimPlayer.uc" />
+    <CustomBuild Include="..\classes\AnyDamage.uc" />
+    <CustomBuild Include="..\classes\BeamAnchor.uc" />
+    <CustomBuild Include="..\Classes\BeamSystem.uc" />
+    <CustomBuild Include="..\classes\BiochemicalDamage.uc" />
+    <CustomBuild Include="..\Classes\Bitmap.uc" />
+    <CustomBuild Include="..\Classes\BlockAll.uc" />
+    <CustomBuild Include="..\Classes\BlockedPath.uc" />
+    <CustomBuild Include="..\Classes\BlockMonsters.uc" />
+    <CustomBuild Include="..\Classes\BlockPlayer.uc" />
+    <CustomBuild Include="..\classes\BoneRope.uc" />
+    <CustomBuild Include="..\classes\BootSmashDamage.uc" />
+    <CustomBuild Include="..\Classes\BotPawn.uc" />
+    <CustomBuild Include="..\classes\BreakableGlass.uc" />
+    <CustomBuild Include="..\Classes\Brush.uc" />
+    <CustomBuild Include="..\Classes\BulletDamage.uc" />
+    <CustomBuild Include="..\Classes\ButtonMarker.uc" />
+    <CustomBuild Include="..\Classes\Camera.uc" />
+    <CustomBuild Include="..\Classes\Canvas.uc" />
+    <CustomBuild Include="..\Classes\Carcass.uc" />
+    <CustomBuild Include="..\classes\ClientBeaconReceiver.uc" />
+    <CustomBuild Include="..\Classes\ClipMarker.uc" />
+    <CustomBuild Include="..\classes\ColdDamage.uc" />
+    <CustomBuild Include="..\Classes\Commandlet.uc" />
+    <CustomBuild Include="..\Classes\Console.uc" />
+    <CustomBuild Include="..\classes\ConstraintJoint.uc" />
+    <CustomBuild Include="..\Classes\ControlRemapper.uc" />
+    <CustomBuild Include="..\Classes\Coordaxis.uc" />
+    <CustomBuild Include="..\Classes\Counter.uc" />
+    <CustomBuild Include="..\Classes\CriticalEventMessage.uc" />
+    <CustomBuild Include="..\Classes\CriticalString.uc" />
+    <CustomBuild Include="..\classes\CrushingDamage.uc" />
+    <CustomBuild Include="..\Classes\DamageType.uc" />
+    <CustomBuild Include="..\classes\DebugAnimView.uc" />
+    <CustomBuild Include="..\Classes\DebugView.uc" />
+    <CustomBuild Include="..\Classes\Decal.uc" />
+    <CustomBuild Include="..\classes\DecapitationDamage.uc" />
+    <CustomBuild Include="..\Classes\Decoration.uc" />
+    <CustomBuild Include="..\Classes\DefensePoint.uc" />
+    <CustomBuild Include="..\Classes\deleteme.uc" />
+    <CustomBuild Include="..\Classes\DigitalClockDispatcher.uc" />
+    <CustomBuild Include="..\Classes\Dispatcher.uc" />
+    <CustomBuild Include="..\Classes\Dispatchers.uc" />
+    <CustomBuild Include="..\Classes\dnDecal.uc" />
+    <CustomBuild Include="..\Classes\dnDecal_Delayed.uc" />
+    <CustomBuild Include="..\Classes\DoorHandle.uc" />
+    <CustomBuild Include="..\Classes\DoorMover.uc" />
+    <CustomBuild Include="..\classes\DOTAffector.uc" />
+    <CustomBuild Include="..\Classes\DOTTrigger.uc" />
+    <CustomBuild Include="..\classes\DrawActorMount.uc" />
+    <CustomBuild Include="..\classes\DrowningDamage.uc" />
+    <CustomBuild Include="..\Classes\DukeNet.uc" />
+    <CustomBuild Include="..\Classes\DukeVoice.uc" />
+    <CustomBuild Include="..\Classes\Effects.uc" />
+    <CustomBuild Include="..\classes\ElectricalDamage.uc" />
+    <CustomBuild Include="..\Classes\Engine.uc" />
+    <CustomBuild Include="..\Classes\Engine.upkg" />
+    <CustomBuild Include="..\classes\ExplosionDamage.uc" />
+    <CustomBuild Include="..\classes\FallingDamage.uc" />
+    <CustomBuild Include="..\classes\FireDamage.uc" />
+    <CustomBuild Include="..\Classes\FlareLight.uc" />
+    <CustomBuild Include="..\Classes\FlicTexture.uc" />
+    <CustomBuild Include="..\Classes\FocalPoint.uc" />
+    <CustomBuild Include="..\Classes\FocusPoint.uc" />
+    <CustomBuild Include="..\Classes\FogMorphDispatcher.uc" />
+    <CustomBuild Include="..\Classes\FontBaseBlargo.uc" />
+    <CustomBuild Include="..\Classes\Fragment.uc" />
+    <CustomBuild Include="..\Classes\GameInfo.uc" />
+    <CustomBuild Include="..\Classes\GameReplicationInfo.uc" />
+    <CustomBuild Include="..\Classes\GlassMover.uc" />
+    <CustomBuild Include="..\Classes\GlassShatterEffect.uc" />
+    <CustomBuild Include="..\classes\HelloWorldCommandlet.uc" />
+    <CustomBuild Include="..\classes\HitPackage.uc" />
+    <CustomBuild Include="..\classes\HitPackage_Decoration.uc" />
+    <CustomBuild Include="..\classes\HitPackage_Glass.uc" />
+    <CustomBuild Include="..\classes\HitPackage_GlassDir.uc" />
+    <CustomBuild Include="..\classes\HitPackage_Inventory.uc" />
+    <CustomBuild Include="..\classes\HitPackage_Level.uc" />
+    <CustomBuild Include="..\Classes\HoldSpot.uc" />
+    <CustomBuild Include="..\Classes\HomeBase.uc" />
+    <CustomBuild Include="..\Classes\HUD.uc" />
+    <CustomBuild Include="..\Classes\Info.uc" />
+    <CustomBuild Include="..\classes\InfoActor.uc" />
+    <CustomBuild Include="..\Classes\Inpatcher.uc" />
+    <CustomBuild Include="..\Classes\InternalTrigger.uc" />
+    <CustomBuild Include="..\Classes\InternetInfo.uc" />
+    <CustomBuild Include="..\classes\InternetLink.uc" />
+    <CustomBuild Include="..\Classes\InterpolationPoint.uc" />
+    <CustomBuild Include="..\Classes\InterpolationStation.uc" />
+    <CustomBuild Include="..\Classes\Inventory.uc" />
+    <CustomBuild Include="..\Classes\InventorySpot.uc" />
+    <CustomBuild Include="..\Classes\Item.uc" />
+    <CustomBuild Include="..\Classes\KeyframeDispatch.uc" />
+    <CustomBuild Include="..\Classes\KeyframeDispatchDispatcher.uc" />
+    <CustomBuild Include="..\Classes\Keypoint.uc" />
+    <CustomBuild Include="..\Classes\KillTrigger.uc" />
+    <CustomBuild Include="..\classes\KungFuDamage.uc" />
+    <CustomBuild Include="..\classes\LaserBeam.uc" />
+    <CustomBuild Include="..\Classes\LevelInfo.uc" />
+    <CustomBuild Include="..\Classes\LevelSummary.uc" />
+    <CustomBuild Include="..\Classes\LiftCenter.uc" />
+    <CustomBuild Include="..\Classes\LiftExit.uc" />
+    <CustomBuild Include="..\Classes\Light.uc" />
+    <CustomBuild Include="..\classes\Locale.uc" />
+    <CustomBuild Include="..\Classes\LocalMessage.uc" />
+    <CustomBuild Include="..\Classes\locationid.uc" />
+    <CustomBuild Include="..\Classes\LogicGate.uc" />
+    <CustomBuild Include="..\Classes\LookAtDispatch.uc" />
+    <CustomBuild Include="..\Classes\MapList.uc" />
+    <CustomBuild Include="..\classes\MapLocations.uc" />
+    <CustomBuild Include="..\Classes\Material.uc" />
+    <CustomBuild Include="..\Classes\MeshDecal.uc" />
+    <CustomBuild Include="..\Classes\MeshEffect.uc" />
+    <CustomBuild Include="..\classes\MeshImmolation.uc" />
+    <CustomBuild Include="..\Classes\MeshInstance.uc" />
+    <CustomBuild Include="..\Classes\Mover.uc" />
+    <CustomBuild Include="..\Classes\MusicEvent.uc" />
+    <CustomBuild Include="..\Classes\MusicTrigger.uc" />
+    <CustomBuild Include="..\Classes\Mutator.uc" />
+    <CustomBuild Include="..\Classes\NavigationPoint.uc" />
+    <CustomBuild Include="..\classes\Object.uc" />
+    <CustomBuild Include="..\Classes\Palette.uc" />
+    <CustomBuild Include="..\classes\ParticleCollisionActor.uc" />
+    <CustomBuild Include="..\Classes\ParticleSystem.uc" />
+    <CustomBuild Include="..\Classes\PathAttach.uc" />
+    <CustomBuild Include="..\Classes\PathNode.uc" />
+    <CustomBuild Include="..\Classes\PatrolPoint.uc" />
+    <CustomBuild Include="..\Classes\Pawn.uc" />
+    <CustomBuild Include="..\classes\PawnImmolation.uc" />
+    <CustomBuild Include="..\classes\PawnShrink.uc" />
+    <CustomBuild Include="..\Classes\PawnTrackingInfo.uc" />
+    <CustomBuild Include="..\Classes\PeriodicTrigger.uc" />
+    <CustomBuild Include="..\Classes\Player.uc" />
+    <CustomBuild Include="..\Classes\PlayerCanSeeMe.uc" />
+    <CustomBuild Include="..\Classes\PlayerPawn.uc" />
+    <CustomBuild Include="..\Classes\PlayerReplicationInfo.uc" />
+    <CustomBuild Include="..\Classes\PlayerStart.uc" />
+    <CustomBuild Include="..\classes\PoisonDamage.uc" />
+    <CustomBuild Include="..\Classes\PolyMarker.uc" />
+    <CustomBuild Include="..\Classes\Primitive.uc" />
+    <CustomBuild Include="..\Classes\ProceduralTexture.uc" />
+    <CustomBuild Include="..\Classes\Projectile.uc" />
+    <CustomBuild Include="..\Classes\Puppet.uc" />
+    <CustomBuild Include="..\Classes\PuppetIterator.uc" />
+    <CustomBuild Include="..\Classes\PuppetIteratorGlobal.uc" />
+    <CustomBuild Include="..\Classes\PuppetIteratorRadius.uc" />
+    <CustomBuild Include="..\Classes\PuppetWorker.uc" />
+    <CustomBuild Include="..\Classes\QuestItem.uc" />
+    <CustomBuild Include="..\Classes\QuestTrigger.uc" />
+    <CustomBuild Include="..\classes\RadiationDamage.uc" />
+    <CustomBuild Include="..\Classes\RandomDispatcher.uc" />
+    <CustomBuild Include="..\classes\RenderActor.uc" />
+    <CustomBuild Include="..\Classes\ReplicationInfo.uc" />
+    <CustomBuild Include="..\Classes\RespawnMarker.uc" />
+    <CustomBuild Include="..\Classes\RotaryTrigger.uc" />
+    <CustomBuild Include="..\Classes\RouletteWheelDispatcher.uc" />
+    <CustomBuild Include="..\Classes\RoundRobin.uc" />
+    <CustomBuild Include="..\Classes\SavedMove.uc" />
+    <CustomBuild Include="..\Classes\ScaledSprite.uc" />
+    <CustomBuild Include="..\Classes\ScoreBoard.uc" />
+    <CustomBuild Include="..\Classes\Scout.uc" />
+    <CustomBuild Include="..\Classes\ScriptedTexture.uc" />
+    <CustomBuild Include="..\classes\ShrinkerDamage.uc" />
+    <CustomBuild Include="..\Classes\SkyZoneInfo.uc" />
+    <CustomBuild Include="..\classes\SmackerTexture.uc" />
+    <CustomBuild Include="..\Classes\SoftParticleAffector.uc" />
+    <CustomBuild Include="..\Classes\SoftParticleSystem.uc" />
+    <CustomBuild Include="..\Classes\SoftParticleSystemAssign.uc" />
+    <CustomBuild Include="..\Classes\SOSMessage.uc" />
+    <CustomBuild Include="..\Classes\SpawnNotify.uc" />
+    <CustomBuild Include="..\Classes\SpecialEvent.uc" />
+    <CustomBuild Include="..\Classes\Spotlight.uc" />
+    <CustomBuild Include="..\Classes\SpriteManager.uc" />
+    <CustomBuild Include="..\Classes\StaticTexture.uc" />
+    <CustomBuild Include="..\classes\SteroidBurnoutDamage.uc" />
+    <CustomBuild Include="..\Classes\StringMessage.uc" />
+    <CustomBuild Include="..\classes\Subsystem.uc" />
+    <CustomBuild Include="..\Classes\SuicideDamage.uc" />
+    <CustomBuild Include="..\classes\TcpLink.uc" />
+    <CustomBuild Include="..\Classes\Teleporter.uc" />
+    <CustomBuild Include="..\classes\TentacleDamage.uc" />
+    <CustomBuild Include="..\Classes\TestMeshEffect.uc" />
+    <CustomBuild Include="..\Classes\Texture.uc" />
+    <CustomBuild Include="..\Classes\TextureCanvas.uc" />
+    <CustomBuild Include="..\classes\thirdpersondecoration.uc" />
+    <CustomBuild Include="..\classes\Time.uc" />
+    <CustomBuild Include="..\Classes\Trigger.uc" />
+    <CustomBuild Include="..\Classes\TriggerAnim.uc" />
+    <CustomBuild Include="..\Classes\TriggerArrangeActors.uc" />
+    <CustomBuild Include="..\Classes\TriggerAssign.uc" />
+    <CustomBuild Include="..\Classes\TriggerDestroy.uc" />
+    <CustomBuild Include="..\Classes\TriggerEtherial.uc" />
+    <CustomBuild Include="..\Classes\TriggerExternalForce.uc" />
+    <CustomBuild Include="..\Classes\TriggerFlic.uc" />
+    <CustomBuild Include="..\Classes\TriggerForward.uc" />
+    <CustomBuild Include="..\Classes\TriggerFOV.uc" />
+    <CustomBuild Include="..\Classes\TriggerLight.uc" />
+    <CustomBuild Include="..\Classes\TriggerLightStyle.uc" />
+    <CustomBuild Include="..\Classes\TriggerMarker.uc" />
+    <CustomBuild Include="..\Classes\TriggerMaterial.uc" />
+    <CustomBuild Include="..\Classes\TriggerMeshChannel.uc" />
+    <CustomBuild Include="..\Classes\TriggerMount.uc" />
+    <CustomBuild Include="..\Classes\TriggerPortal.uc" />
+    <CustomBuild Include="..\Classes\TriggerRelay.uc" />
+    <CustomBuild Include="..\Classes\Triggers.uc" />
+    <CustomBuild Include="..\Classes\TriggerSelfForward.uc" />
+    <CustomBuild Include="..\Classes\TriggerSetPhysics.uc" />
+    <CustomBuild Include="..\Classes\TriggerSlomo.uc" />
+    <CustomBuild Include="..\Classes\TriggerSmacker.uc" />
+    <CustomBuild Include="..\Classes\TriggerSpawn.uc" />
+    <CustomBuild Include="..\Classes\TriggerTextureCanvas.uc" />
+    <CustomBuild Include="..\Classes\TriggerTimeWarp.uc" />
+    <CustomBuild Include="..\Classes\TriggerToggleExistance.uc" />
+    <CustomBuild Include="..\Classes\TriggerToggleHidden.uc" />
+    <CustomBuild Include="..\Classes\TriggerTransmission.uc" />
+    <CustomBuild Include="..\Classes\TriggerZoneAssign.uc" />
+    <CustomBuild Include="..\classes\UdpBeacon.uc" />
+    <CustomBuild Include="..\classes\UdpLink.uc" />
+    <CustomBuild Include="..\Classes\UniqueTextureBank.uc" />
+    <CustomBuild Include="..\Classes\Variable.uc" />
+    <CustomBuild Include="..\Classes\VariableModify.uc" />
+    <CustomBuild Include="..\Classes\VoicePack.uc" />
+    <CustomBuild Include="..\Classes\WarpZoneInfo.uc" />
+    <CustomBuild Include="..\Classes\WarpZoneMarker.uc" />
+    <CustomBuild Include="..\Classes\WayBeacon.uc" />
+    <CustomBuild Include="..\Classes\Weapon.uc" />
+    <CustomBuild Include="..\classes\WhippedDownDamage.uc" />
+    <CustomBuild Include="..\classes\WhippedLeftDamage.uc" />
+    <CustomBuild Include="..\classes\WhippedRightDamage.uc" />
+    <CustomBuild Include="..\Classes\ZoneInfo.uc" />
+    <CustomBuild Include="..\Classes\ZoneTrigger.uc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Lib\binkw32.lib" />
+    <Library Include="..\Lib\s3tc.lib" />
+    <Library Include="..\Lib\smackw32.lib" />
+    <Library Include="..\Lib\Spchwrap.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\EngineRes.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">res;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cannibal\Cannibal.vcxproj">
+      <Project>{ec425767-b4b3-470e-8935-55124a866481}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\GalaxyLib\GalaxyLib.vcxproj">
+      <Project>{bdc4454d-0633-49fb-9d5c-ba2db55e5089}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\xcore\xcore.vcxproj">
+      <Project>{f858adcb-3655-4949-bf1b-da9a280a7f2d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

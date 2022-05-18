@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9cb88d2e-5edb-4ffd-86c0-eccb27b21236}</UniqueIdentifier>
+      <Extensions>*.c;*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{4295102c-51e7-4036-bbca-3e18f0a57c79}</UniqueIdentifier>
+      <Extensions>*.c;*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Overlays">
+      <UniqueIdentifier>{66994d9d-b718-47c0-8ac3-ff40f84afcde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f3354c6c-2fee-474d-818d-2299245eefa6}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\System Headers">
+      <UniqueIdentifier>{d9e8753f-dedc-4446-a956-473ff0981238}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Overlay Headers">
+      <UniqueIdentifier>{2e5e5656-9938-45d9-b692-06cbfb71207d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{50a6064f-0bee-4a62-a4e9-fd06cd1f6305}</UniqueIdentifier>
+      <Extensions>*.rc;*.ico</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cam_man.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="con_man.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="file_imp.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="in_main.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="in_win.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="math_vec.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="mdx_man.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_man.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="sys_main.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="sys_win.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="vcr_man.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="vid_main.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_cc.cpp">
+      <Filter>Source Files\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_defs.cpp">
+      <Filter>Source Files\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_frm.cpp">
+      <Filter>Source Files\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_mdl.cpp">
+      <Filter>Source Files\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_seq.cpp">
+      <Filter>Source Files\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_skin.cpp">
+      <Filter>Source Files\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="ovl_work.cpp">
+      <Filter>Source Files\Overlays</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cam_man.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="cbl_defs.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="con_man.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="file_imp.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="in_main.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="in_win.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="math_vec.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mdx_man.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_man.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="sys_main.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="sys_win.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vcr_man.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="vid_main.h">
+      <Filter>Header Files\System Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_cc.h">
+      <Filter>Header Files\Overlay Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_defs.h">
+      <Filter>Header Files\Overlay Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_frm.h">
+      <Filter>Header Files\Overlay Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_mdl.h">
+      <Filter>Header Files\Overlay Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_seq.h">
+      <Filter>Header Files\Overlay Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_skin.h">
+      <Filter>Header Files\Overlay Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ovl_work.h">
+      <Filter>Header Files\Overlay Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="cannibal.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CannibalEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

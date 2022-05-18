@@ -1,0 +1,10 @@
+^F:\GDEV\DUKE\GALAXYLIB\K3D.ASM
+ml /Fo.\GalaxyLib___Win32_Release\K3d.obj /c /coff /Cp /Cx F:\GDEV\duke\GalaxyLib\K3d.asm
+^F:\GDEV\DUKE\GALAXYLIB\KNI.ASM
+ml /Fo.\GalaxyLib___Win32_Release\kni.obj /c /coff /Cp /Cx F:\GDEV\duke\GalaxyLib\Kni.asm
+^F:\GDEV\DUKE\GALAXYLIB\MMX.ASM
+ml /Fo.\GalaxyLib___Win32_Release\mmx.obj /c /coff /Cp /Cx F:\GDEV\duke\GalaxyLib\Mmx.asm
+^F:\GDEV\DUKE\GALAXYLIB\SBS.ASM
+ml /Fo.\GalaxyLib___Win32_Release\sbs.obj /c /coff /Cp /Cx F:\GDEV\duke\GalaxyLib\Sbs.asm
+^F:\GDEV\DUKE\GALAXYLIB\X86.ASM
+ml /Fo.\GalaxyLib___Win32_Release\x86.obj /c /coff /Cp /Cx F:\GDEV\duke\GalaxyLib\X86.asm

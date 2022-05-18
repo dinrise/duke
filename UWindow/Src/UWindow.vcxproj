@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Duke4_UT400/UWindow/Src", CELAAAAA</SccProjectName>
+    <SccLocalPath>..</SccLocalPath>
+    <ProjectGuid>{0D159BCA-33DD-469E-9397-EB3B5680DACF}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PreprocessorDefinitions>_WINDOWS;_MBCS;_USRDLL;UWINDOW_EXPORTS;UNICODE;_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\UWindow.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\UWindow.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\UWindow.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Debug\UWindow.dll</OutputFile>
+      <ImportLibrary>.\Debug\UWindow.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_MBCS;_USRDLL;UWINDOW_EXPORTS;NDEBUG;_WINDOWS;UNICODE;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\UWindow.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command>nmake /f UWindow.mak</Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>nmake /f UWindow.mak</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\UWindow.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\UWindow.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\UWindow.dll</OutputFile>
+      <ImportLibrary>.\Release\UWindow.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Classes\ToolTipWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindow.upkg" />
+    <CustomBuild Include="..\Classes\UWindowBase.uc" />
+    <CustomBuild Include="..\Classes\UWindowBitmap.uc" />
+    <CustomBuild Include="..\Classes\UWindowButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowCheckbox.uc" />
+    <CustomBuild Include="..\Classes\UWindowClientWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowComboButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowComboControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowComboLeftButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowComboList.uc" />
+    <CustomBuild Include="..\Classes\UWindowComboListItem.uc" />
+    <CustomBuild Include="..\Classes\UWindowComboRightButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowConsoleClientWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowConsoleTextAreaControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowConsoleWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowControlFrame.uc" />
+    <CustomBuild Include="..\Classes\UWindowDialogClientWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowDialogControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowDynamicTextArea.uc" />
+    <CustomBuild Include="..\Classes\UWindowDynamicTextRow.uc" />
+    <CustomBuild Include="..\Classes\UWindowEditBox.uc" />
+    <CustomBuild Include="..\Classes\UWindowEditBoxHistory.uc" />
+    <CustomBuild Include="..\Classes\UWindowEditControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowFrameCloseBox.uc" />
+    <CustomBuild Include="..\Classes\UWindowFramedWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowGrid.uc" />
+    <CustomBuild Include="..\Classes\UWindowGridClient.uc" />
+    <CustomBuild Include="..\Classes\UWindowGridColumn.uc" />
+    <CustomBuild Include="..\Classes\UWindowHotkeyWindowList.uc" />
+    <CustomBuild Include="..\Classes\UWindowHScrollbar.uc" />
+    <CustomBuild Include="..\Classes\UWindowHSliderControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowHSplitter.uc" />
+    <CustomBuild Include="..\Classes\UWindowHTMLTextArea.uc" />
+    <CustomBuild Include="..\Classes\UWindowHTMLTextRow.uc" />
+    <CustomBuild Include="..\Classes\UWindowLabelControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowLayoutBase.uc" />
+    <CustomBuild Include="..\Classes\UWindowLayoutCell.uc" />
+    <CustomBuild Include="..\Classes\UWindowLayoutControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowLayoutRow.uc" />
+    <CustomBuild Include="..\Classes\UWindowList.uc" />
+    <CustomBuild Include="..\Classes\UWindowListBox.uc" />
+    <CustomBuild Include="..\Classes\UWindowListBoxItem.uc" />
+    <CustomBuild Include="..\Classes\UWindowListControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowLookAndFeel.uc" />
+    <CustomBuild Include="..\Classes\UWindowMenuBar.uc" />
+    <CustomBuild Include="..\Classes\UWindowMenuBarItem.uc" />
+    <CustomBuild Include="..\Classes\UWindowMessageBox.uc" />
+    <CustomBuild Include="..\Classes\UWindowMessageBoxArea.uc" />
+    <CustomBuild Include="..\Classes\UWindowMessageBoxCW.uc" />
+    <CustomBuild Include="..\Classes\UWindowPageControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowPageControlPage.uc" />
+    <CustomBuild Include="..\Classes\UWindowPageWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowProgressBar.uc" />
+    <CustomBuild Include="..\Classes\UWindowPulldownMenu.uc" />
+    <CustomBuild Include="..\Classes\UWindowPulldownMenuItem.uc" />
+    <CustomBuild Include="..\Classes\UWindowRightClickMenu.uc" />
+    <CustomBuild Include="..\Classes\UWindowRootWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowSBDownButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowSBLeftButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowSBRightButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowSBUpButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowScrollingDialogClient.uc" />
+    <CustomBuild Include="..\Classes\UWindowSmallButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowSmallCancelButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowSmallCloseButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowSmallOKButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowTabControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowTabControlItem.uc" />
+    <CustomBuild Include="..\Classes\UWindowTabControlLeftButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowTabControlRightButton.uc" />
+    <CustomBuild Include="..\Classes\UWindowTabControlTabArea.uc" />
+    <CustomBuild Include="..\Classes\UWindowTextAreaControl.uc" />
+    <CustomBuild Include="..\Classes\UWindowURLTextArea.uc" />
+    <CustomBuild Include="..\Classes\UWindowVScrollbar.uc" />
+    <CustomBuild Include="..\Classes\UWindowVSplitter.uc" />
+    <CustomBuild Include="..\Classes\UWindowWin95LookAndFeel.uc" />
+    <CustomBuild Include="..\Classes\UWindowWindow.uc" />
+    <CustomBuild Include="..\Classes\UWindowWrappedTextArea.uc" />
+    <CustomBuild Include="..\Classes\WindowConsole.uc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

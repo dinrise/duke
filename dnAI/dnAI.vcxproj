@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Duke4_UT400/dnAI", XXMAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>MakeFileProj</Keyword>
+    <ProjectGuid>{477AE244-E679-4D54-BD45-90A8C5F2A724}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <NMakeBuildCommandLine>NMAKE /f EDFSoldier.mak</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>NMAKE /f EDFSoldier.mak /a</NMakeReBuildCommandLine>
+    <NMakeOutput>dnAI.exe</NMakeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <NMakeBuildCommandLine>NMAKE /f EDFSoldier.mak</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>NMAKE /f EDFSoldier.mak /a</NMakeReBuildCommandLine>
+    <NMakeOutput>dnAI.exe</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Classes\AggressionTrigger.uc" />
+    <CustomBuild Include="Classes\AIClimbControl.uc" />
+    <CustomBuild Include="Classes\AICombatController.uc" />
+    <CustomBuild Include="Classes\AIController.uc" />
+    <CustomBuild Include="Classes\AICoverController.uc" />
+    <CustomBuild Include="Classes\AIDebugHUD.uc" />
+    <CustomBuild Include="Classes\AIFireController.uc" />
+    <CustomBuild Include="Classes\AIFlockController.uc" />
+    <CustomBuild Include="Classes\AIJetski.uc" />
+    <CustomBuild Include="Classes\AIJetskiCarcass.uc" />
+    <CustomBuild Include="Classes\AIJetskiController.uc" />
+    <CustomBuild Include="Classes\AIJetskiSpawnPoint.uc" />
+    <CustomBuild Include="Classes\AIJetskiTrigger.uc" />
+    <CustomBuild Include="Classes\AIPawn.uc" />
+    <CustomBuild Include="Classes\AIRopeAnchor.uc" />
+    <CustomBuild Include="Classes\AITempTarget.uc" />
+    <CustomBuild Include="Classes\AlienPig.uc" />
+    <CustomBuild Include="Classes\AlienPigCarcass.uc" />
+    <CustomBuild Include="Classes\Bat.uc" />
+    <CustomBuild Include="Classes\BatFlock.uc" />
+    <CustomBuild Include="Classes\Bellowsaur.uc" />
+    <CustomBuild Include="Classes\BellowsaurCarcass.uc" />
+    <CustomBuild Include="Classes\Birds.uc" />
+    <CustomBuild Include="Classes\Blowfish.uc" />
+    <CustomBuild Include="Classes\BonedCreature.uc" />
+    <CustomBuild Include="Classes\BUDDBot.uc" />
+    <CustomBuild Include="Classes\Butterfly.uc" />
+    <CustomBuild Include="Classes\ButterflySwarm.uc" />
+    <CustomBuild Include="classes\CoverPoint.uc" />
+    <CustomBuild Include="Classes\CoverSpot.uc" />
+    <CustomBuild Include="Classes\Coyote.uc" />
+    <CustomBuild Include="Classes\Creature.uc" />
+    <CustomBuild Include="Classes\CreatureFactory.uc" />
+    <CustomBuild Include="Classes\CreeperHead.uc" />
+    <CustomBuild Include="Classes\CrouchNode.uc" />
+    <CustomBuild Include="Classes\DecorativeCorpse.uc" />
+    <CustomBuild Include="Classes\DogCarcass.uc" />
+    <CustomBuild Include="Classes\Dogs.uc" />
+    <CustomBuild Include="Classes\EDFCopter.uc" />
+    <CustomBuild Include="Classes\EDFCopterCollisionActor.uc" />
+    <CustomBuild Include="Classes\EDFDog.uc" />
+    <CustomBuild Include="Classes\EDFDogDesert.uc" />
+    <CustomBuild Include="Classes\EDFFreezer.uc" />
+    <CustomBuild Include="Classes\EDFGrunts.uc" />
+    <CustomBuild Include="Classes\EDFHeavyWeps.uc" />
+    <CustomBuild Include="Classes\EDFHeavyWepsBig.uc" />
+    <CustomBuild Include="Classes\EDFMinigun.uc" />
+    <CustomBuild Include="Classes\EDFSapper.uc" />
+    <CustomBuild Include="Classes\EDFSapperGoggles.uc" />
+    <CustomBuild Include="Classes\EDFSapperOneArm.uc" />
+    <CustomBuild Include="Classes\EDFShield.uc" />
+    <CustomBuild Include="Classes\EDFShield_Broken.uc" />
+    <CustomBuild Include="Classes\EDFSniper.uc" />
+    <CustomBuild Include="classes\EDFSoldier.uc" />
+    <CustomBuild Include="Classes\EDFSpeechCoordinator.uc" />
+    <CustomBuild Include="Classes\EggPod.uc" />
+    <CustomBuild Include="Classes\EggPodCarcass.uc" />
+    <CustomBuild Include="Classes\FaceDispatcher.uc" />
+    <CustomBuild Include="Classes\FactoryKiller.uc" />
+    <CustomBuild Include="Classes\FactoryTrigger.uc" />
+    <CustomBuild Include="Classes\Fish.uc" />
+    <CustomBuild Include="Classes\Fish1.uc" />
+    <CustomBuild Include="Classes\Fish2.uc" />
+    <CustomBuild Include="Classes\Gilamonster.uc" />
+    <CustomBuild Include="Classes\Grunt.uc" />
+    <CustomBuild Include="Classes\GruntDesert.uc" />
+    <CustomBuild Include="Classes\GruntDesert1.uc" />
+    <CustomBuild Include="Classes\GruntDesert10.uc" />
+    <CustomBuild Include="Classes\GruntDesert11.uc" />
+    <CustomBuild Include="Classes\GruntDesert12.uc" />
+    <CustomBuild Include="Classes\GruntDesert2.uc" />
+    <CustomBuild Include="Classes\GruntDesert3.uc" />
+    <CustomBuild Include="Classes\GruntDesert4.uc" />
+    <CustomBuild Include="Classes\GruntDesert5.uc" />
+    <CustomBuild Include="Classes\GruntDesert6.uc" />
+    <CustomBuild Include="Classes\GruntDesert7.uc" />
+    <CustomBuild Include="Classes\GruntDesert8.uc" />
+    <CustomBuild Include="Classes\GruntDesert9.uc" />
+    <CustomBuild Include="Classes\GruntSWAT.uc" />
+    <CustomBuild Include="Classes\GruntSWAT1.uc" />
+    <CustomBuild Include="Classes\GruntSWAT10.uc" />
+    <CustomBuild Include="Classes\GruntSWAT11.uc" />
+    <CustomBuild Include="Classes\GruntSWAT12.uc" />
+    <CustomBuild Include="Classes\GruntSWAT2.uc" />
+    <CustomBuild Include="Classes\GruntSWAT3.uc" />
+    <CustomBuild Include="Classes\GruntSWAT4.uc" />
+    <CustomBuild Include="Classes\GruntSWAT5.uc" />
+    <CustomBuild Include="Classes\GruntSWAT6.uc" />
+    <CustomBuild Include="Classes\GruntSWAT7.uc" />
+    <CustomBuild Include="Classes\GruntSWAT8.uc" />
+    <CustomBuild Include="Classes\GruntSWAT9.uc" />
+    <CustomBuild Include="Classes\GruntUrban.uc" />
+    <CustomBuild Include="Classes\GruntUrban1.uc" />
+    <CustomBuild Include="Classes\GruntUrban10.uc" />
+    <CustomBuild Include="Classes\GruntUrban11.uc" />
+    <CustomBuild Include="Classes\GruntUrban12.uc" />
+    <CustomBuild Include="Classes\GruntUrban2.uc" />
+    <CustomBuild Include="Classes\GruntUrban3.uc" />
+    <CustomBuild Include="Classes\GruntUrban4.uc" />
+    <CustomBuild Include="Classes\GruntUrban5.uc" />
+    <CustomBuild Include="Classes\GruntUrban6.uc" />
+    <CustomBuild Include="Classes\GruntUrban7.uc" />
+    <CustomBuild Include="Classes\GruntUrban8.uc" />
+    <CustomBuild Include="Classes\GruntUrban9.uc" />
+    <CustomBuild Include="Classes\HackSniper.uc" />
+    <CustomBuild Include="Classes\HeadCreeper.uc" />
+    <CustomBuild Include="Classes\HeadCreeperCarcass.uc" />
+    <CustomBuild Include="Classes\HidePoint.uc" />
+    <CustomBuild Include="classes\HumanNPC.uc" />
+    <CustomBuild Include="Classes\HumanTrigger.uc" />
+    <CustomBuild Include="Classes\JetSkiDude.uc" />
+    <CustomBuild Include="Classes\JetskiFactory.uc" />
+    <CustomBuild Include="Classes\JetSkiPoint.uc" />
+    <CustomBuild Include="Classes\JetskiTorpedo.uc" />
+    <CustomBuild Include="classes\JumpSpot.uc" />
+    <CustomBuild Include="Classes\LethalDecoration.uc" />
+    <CustomBuild Include="Classes\LizardTrooper.uc" />
+    <CustomBuild Include="Classes\Mule.uc" />
+    <CustomBuild Include="Classes\NPC.uc" />
+    <CustomBuild Include="Classes\NPCActivityEvent.uc" />
+    <CustomBuild Include="Classes\NPCDamGuide.uc" />
+    <CustomBuild Include="Classes\NPCFemale1.uc" />
+    <CustomBuild Include="Classes\NPCMale1.uc" />
+    <CustomBuild Include="Classes\NPCMale2.uc" />
+    <CustomBuild Include="Classes\NPCMale3.uc" />
+    <CustomBuild Include="Classes\NPCMale4.uc" />
+    <CustomBuild Include="Classes\NPCRandom.uc" />
+    <CustomBuild Include="Classes\NPCRandomSnatched.uc" />
+    <CustomBuild Include="Classes\NPCStripper.uc" />
+    <CustomBuild Include="Classes\Octabrain.uc" />
+    <CustomBuild Include="Classes\OctabrainCarcass.uc" />
+    <CustomBuild Include="Classes\PathWeightTrigger.uc" />
+    <CustomBuild Include="classes\PatrolControl.uc" />
+    <CustomBuild Include="classes\PatrolEvent.uc" />
+    <CustomBuild Include="Classes\PawnClimber.uc" />
+    <CustomBuild Include="Classes\PerchPoint.uc" />
+    <CustomBuild Include="Classes\PigCop.uc" />
+    <CustomBuild Include="Classes\PodProtector.uc" />
+    <CustomBuild Include="Classes\PodProtectorCarcass.uc" />
+    <CustomBuild Include="Classes\ProtonCollisionActor.uc" />
+    <CustomBuild Include="Classes\ProtonGun.uc" />
+    <CustomBuild Include="Classes\ProtonMonitor.uc" />
+    <CustomBuild Include="Classes\ProtonMonitorPoint.uc" />
+    <CustomBuild Include="Classes\RandomDesert.uc" />
+    <CustomBuild Include="Classes\RandomDesertShield.uc" />
+    <CustomBuild Include="Classes\RandomSWAT.uc" />
+    <CustomBuild Include="Classes\RandomSWATShield.uc" />
+    <CustomBuild Include="Classes\RandomUrban.uc" />
+    <CustomBuild Include="Classes\RandomUrbanShield.uc" />
+    <CustomBuild Include="Classes\RouteRandomizer.uc" />
+    <CustomBuild Include="Classes\SandWorm.uc" />
+    <CustomBuild Include="Classes\Scorpion.uc" />
+    <CustomBuild Include="Classes\Shark.uc" />
+    <CustomBuild Include="Classes\Snake.uc" />
+    <CustomBuild Include="Classes\SnatchActor.uc" />
+    <CustomBuild Include="Classes\SnatchedGirl.uc" />
+    <CustomBuild Include="Classes\Snatcher.uc" />
+    <CustomBuild Include="Classes\SnatcherAdult.uc" />
+    <CustomBuild Include="Classes\SnatcherAdultCarcass.uc" />
+    <CustomBuild Include="Classes\SnatcherCarcass.uc" />
+    <CustomBuild Include="Classes\SnatcherNest.uc" />
+    <CustomBuild Include="Classes\SnatcherRubble.uc" />
+    <CustomBuild Include="Classes\Spawnpoint.uc" />
+    <CustomBuild Include="Classes\SpecialDecoration.uc" />
+    <CustomBuild Include="Classes\SpecialNavPoint.uc" />
+    <CustomBuild Include="Classes\SpeechTrigger.uc" />
+    <CustomBuild Include="Classes\StunLeech.uc" />
+    <CustomBuild Include="Classes\Tentacle.uc" />
+    <CustomBuild Include="Classes\TentacleSmall.uc" />
+    <CustomBuild Include="Classes\ThingFactory.uc" />
+    <CustomBuild Include="Classes\TriggerActivate.uc" />
+    <CustomBuild Include="Classes\TriggerActivityOffset.uc" />
+    <CustomBuild Include="Classes\TriggerAssignNode.uc" />
+    <CustomBuild Include="Classes\TriggerAssignPawn.uc" />
+    <CustomBuild Include="Classes\TriggerCamp.uc" />
+    <CustomBuild Include="Classes\TriggerHunt.uc" />
+    <CustomBuild Include="Classes\TurretCeiling.uc" />
+    <CustomBuild Include="Classes\TurretMountM16.uc" />
+    <CustomBuild Include="Classes\TurretMountM16Jetski.uc" />
+    <CustomBuild Include="Classes\TurretMountProton.uc" />
+    <CustomBuild Include="Classes\TurretMounts.uc" />
+    <CustomBuild Include="Classes\Turrets.uc" />
+    <CustomBuild Include="Classes\TurretTripod.uc" />
+    <CustomBuild Include="Classes\Turtle.uc" />
+    <CustomBuild Include="Classes\Vulture.uc" />
+    <CustomBuild Include="Classes\VultureCarcass.uc" />
+    <None Include="dnAI.bsc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

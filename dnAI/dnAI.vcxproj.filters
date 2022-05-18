@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{dae0c502-9e19-419f-9a90-91463d1d8fe0}</UniqueIdentifier>
+      <Extensions>*.uc</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Classes\AggressionTrigger.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIClimbControl.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AICombatController.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIController.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AICoverController.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIDebugHUD.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIFireController.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIFlockController.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIJetski.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIJetskiCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIJetskiController.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIJetskiSpawnPoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIJetskiTrigger.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIPawn.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AIRopeAnchor.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AITempTarget.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AlienPig.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\AlienPigCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Bat.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\BatFlock.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Bellowsaur.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\BellowsaurCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Birds.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Blowfish.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\BonedCreature.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\BUDDBot.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Butterfly.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\ButterflySwarm.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\CoverPoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\CoverSpot.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Coyote.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Creature.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\CreatureFactory.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\CreeperHead.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\CrouchNode.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\DecorativeCorpse.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\DogCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Dogs.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFCopter.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFCopterCollisionActor.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFDog.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFDogDesert.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFFreezer.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFGrunts.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFHeavyWeps.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFHeavyWepsBig.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFMinigun.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFSapper.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFSapperGoggles.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFSapperOneArm.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFShield.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFShield_Broken.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFSniper.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\EDFSoldier.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EDFSpeechCoordinator.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EggPod.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\EggPodCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\FaceDispatcher.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\FactoryKiller.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\FactoryTrigger.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Fish.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Fish1.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Fish2.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Gilamonster.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Grunt.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert1.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert10.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert11.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert12.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert2.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert3.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert4.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert5.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert6.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert7.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert8.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntDesert9.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT1.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT10.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT11.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT12.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT2.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT3.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT4.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT5.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT6.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT7.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT8.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntSWAT9.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban1.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban10.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban11.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban12.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban2.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban3.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban4.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban5.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban6.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban7.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban8.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\GruntUrban9.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\HackSniper.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\HeadCreeper.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\HeadCreeperCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\HidePoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\HumanNPC.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\HumanTrigger.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\JetSkiDude.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\JetskiFactory.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\JetSkiPoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\JetskiTorpedo.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\JumpSpot.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\LethalDecoration.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\LizardTrooper.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Mule.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPC.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCActivityEvent.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCDamGuide.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCFemale1.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCMale1.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCMale2.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCMale3.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCMale4.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCRandom.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCRandomSnatched.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NPCStripper.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Octabrain.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\OctabrainCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\PathWeightTrigger.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\PatrolControl.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\PatrolEvent.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\PawnClimber.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\PerchPoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\PigCop.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\PodProtector.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\PodProtectorCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\ProtonCollisionActor.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\ProtonGun.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\ProtonMonitor.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\ProtonMonitorPoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\RandomDesert.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\RandomDesertShield.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\RandomSWAT.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\RandomSWATShield.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\RandomUrban.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\RandomUrbanShield.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\RouteRandomizer.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SandWorm.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Scorpion.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Shark.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Snake.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SnatchActor.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SnatchedGirl.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Snatcher.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SnatcherAdult.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SnatcherAdultCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SnatcherCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SnatcherNest.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SnatcherRubble.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Spawnpoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SpecialDecoration.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SpecialNavPoint.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\SpeechTrigger.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\StunLeech.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Tentacle.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TentacleSmall.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\ThingFactory.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TriggerActivate.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TriggerActivityOffset.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TriggerAssignNode.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TriggerAssignPawn.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TriggerCamp.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TriggerHunt.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TurretCeiling.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TurretMountM16.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TurretMountM16Jetski.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TurretMountProton.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TurretMounts.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Turrets.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\TurretTripod.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Turtle.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\Vulture.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\VultureCarcass.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dnAI.bsc" />
+  </ItemGroup>
+</Project>

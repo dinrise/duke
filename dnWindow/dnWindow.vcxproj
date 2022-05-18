@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/Duke4_UT400/dnWindow", IDMAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{EBF41433-B6D4-433D-8A9F-5DC934612B4C}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;DNWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\dnWindow.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\dnWindow.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\dnWindow.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\dnWindow.dll</OutputFile>
+      <ImportLibrary>.\Release\dnWindow.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;DNWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\dnWindow.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\dnWindow.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\dnWindow.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <LinkDLL>true</LinkDLL>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Debug\dnWindow.dll</OutputFile>
+      <ImportLibrary>.\Debug\dnWindow.lib</ImportLibrary>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="Classes\dnMapList.uc" />
+    <CustomBuild Include="Classes\dnMapListBox.uc" />
+    <CustomBuild Include="Classes\dnMapListCW.uc" />
+    <CustomBuild Include="Classes\dnMapListExclude.uc" />
+    <CustomBuild Include="Classes\dnMapListInclude.uc" />
+    <CustomBuild Include="Classes\dnMapListSC.uc" />
+    <CustomBuild Include="Classes\dnMapListWindow.uc" />
+    <CustomBuild Include="Classes\dnMutatorList.uc" />
+    <CustomBuild Include="Classes\dnMutatorListBox.uc" />
+    <CustomBuild Include="Classes\dnMutatorListCW.uc" />
+    <CustomBuild Include="Classes\dnMutatorListExclude.uc" />
+    <CustomBuild Include="Classes\dnMutatorListInclude.uc" />
+    <CustomBuild Include="Classes\dnMutatorListSC.uc" />
+    <CustomBuild Include="Classes\dnMutatorListWindow.uc" />
+    <CustomBuild Include="Classes\DukeConsole.uc" />
+    <CustomBuild Include="Classes\DukeIntro.uc" />
+    <CustomBuild Include="Classes\DukeNetLink.uc" />
+    <CustomBuild Include="Classes\MeshActor.uc" />
+    <CustomBuild Include="Classes\NotifyButton.uc" />
+    <CustomBuild Include="Classes\NotifyWindow.uc" />
+    <CustomBuild Include="Classes\UDukeArrowButton.uc" />
+    <CustomBuild Include="Classes\UDukeAudioCW.uc" />
+    <CustomBuild Include="Classes\UDukeAudioSC.uc" />
+    <CustomBuild Include="Classes\UDukeAudioWindow.uc" />
+    <CustomBuild Include="Classes\UDukeBannerAd.uc" />
+    <CustomBuild Include="Classes\UDukeBuddyList.uc" />
+    <CustomBuild Include="Classes\UDukeBuddyListBox.uc" />
+    <CustomBuild Include="Classes\UDukeButton.uc" />
+    <CustomBuild Include="Classes\UDukeColoredDynamicTextRow.uc" />
+    <CustomBuild Include="Classes\UDukeConsoleWindow.uc" />
+    <CustomBuild Include="Classes\UDukeControlsBinder.uc" />
+    <CustomBuild Include="Classes\UDukeControlsCW.uc" />
+    <CustomBuild Include="Classes\UDukeControlsSC.uc" />
+    <CustomBuild Include="Classes\UDukeControlsWindow.uc" />
+    <CustomBuild Include="Classes\UDukeCreateMultiCW.uc" />
+    <CustomBuild Include="Classes\UDukeCreateMultiSC.uc" />
+    <CustomBuild Include="Classes\UDukeCreateMultiWindow.uc" />
+    <CustomBuild Include="Classes\UDukeDesktopWindow.uc" />
+    <CustomBuild Include="Classes\UDukeDesktopWindowBase.uc" />
+    <CustomBuild Include="Classes\UDukeDialogClientWindow.uc" />
+    <CustomBuild Include="Classes\UDukeDukeNetWindow.uc" />
+    <CustomBuild Include="Classes\UDukeEmbeddedClient.uc" />
+    <CustomBuild Include="Classes\UDukeFakeIcon.uc" />
+    <CustomBuild Include="Classes\UDukeFrameButton.uc" />
+    <CustomBuild Include="Classes\UDukeFramedWindow.uc" />
+    <CustomBuild Include="Classes\UDukeGameOptionsCW.uc" />
+    <CustomBuild Include="Classes\UDukeGameOptionsSC.uc" />
+    <CustomBuild Include="Classes\UDukeGameWindow.uc" />
+    <CustomBuild Include="Classes\UDukeGSpyFact.uc" />
+    <CustomBuild Include="Classes\UDukeGSpyLink.uc" />
+    <CustomBuild Include="Classes\UDukeHTMLTextHandler.uc" />
+    <CustomBuild Include="Classes\UDukeHTTPClient.uc" />
+    <CustomBuild Include="Classes\UDukeInfoCW.uc" />
+    <CustomBuild Include="Classes\UDukeInGameButton.uc" />
+    <CustomBuild Include="Classes\UDukeInGamePulldownClassesMenu.uc" />
+    <CustomBuild Include="Classes\UDukeInGamePulldownMenu.uc" />
+    <CustomBuild Include="Classes\UDukeInGamePulldownSpectatorMenu.uc" />
+    <CustomBuild Include="Classes\UDukeInGamePulldownTauntMenu.uc" />
+    <CustomBuild Include="Classes\UDukeInGamePulldownTeamsMenu.uc" />
+    <CustomBuild Include="Classes\UDukeInGameWindow.uc" />
+    <CustomBuild Include="Classes\UDukeInGameWindowClasses.uc" />
+    <CustomBuild Include="Classes\UDukeInGameWindowSpectator.uc" />
+    <CustomBuild Include="Classes\UDukeInGameWindowSpeech.uc" />
+    <CustomBuild Include="Classes\UDukeInGameWindowTeams.uc" />
+    <CustomBuild Include="Classes\UDukeJoinMultiCW.uc" />
+    <CustomBuild Include="Classes\UDukeJoinMultiSC.uc" />
+    <CustomBuild Include="Classes\UDukeJoinMultiWindow.uc" />
+    <CustomBuild Include="Classes\UDukeLabelControl.uc" />
+    <CustomBuild Include="Classes\UDukeLoadGameWindow.uc" />
+    <CustomBuild Include="Classes\UDukeLoadGameWindowCW.uc" />
+    <CustomBuild Include="Classes\UDukeLocalFact.uc" />
+    <CustomBuild Include="Classes\UDukeLocalLink.uc" />
+    <CustomBuild Include="Classes\UDukeLookAndFeel.uc" />
+    <CustomBuild Include="Classes\UDukeMissionOverButton.uc" />
+    <CustomBuild Include="Classes\UDukeMultiRulesBase.uc" />
+    <CustomBuild Include="Classes\UDukeMultiRulesCW.uc" />
+    <CustomBuild Include="Classes\UDukeMultiRulesSC.uc" />
+    <CustomBuild Include="Classes\UDukeNetChannelItem.uc" />
+    <CustomBuild Include="Classes\UDukeNetChannelListBox.uc" />
+    <CustomBuild Include="Classes\UDukeNetCW.uc" />
+    <CustomBuild Include="Classes\UDukeNetSC.uc" />
+    <CustomBuild Include="Classes\UDukeNetTabWindow.uc" />
+    <CustomBuild Include="Classes\UDukeNetTabWindowChat.uc" />
+    <CustomBuild Include="Classes\UDukeNetTabWindowCreate.uc" />
+    <CustomBuild Include="Classes\UDukeNetTabWindowNews.uc" />
+    <CustomBuild Include="Classes\UDukeNetTextArea.uc" />
+    <CustomBuild Include="Classes\UDukeNetUserItem.uc" />
+    <CustomBuild Include="Classes\UDukeNetUserListBox.uc" />
+    <CustomBuild Include="Classes\UDukeNewGameWindow.uc" />
+    <CustomBuild Include="Classes\UDukeNewGameWindowCW.uc" />
+    <CustomBuild Include="Classes\UDukeNewGameWindowSC.uc" />
+    <CustomBuild Include="Classes\UDukePageWindow.uc" />
+    <CustomBuild Include="Classes\UDukeParentLockWindow.uc" />
+    <CustomBuild Include="Classes\UDukeParentLockWindowCW.uc" />
+    <CustomBuild Include="Classes\UDukeParentLockWindowSC.uc" />
+    <CustomBuild Include="Classes\UDukePasswordCW.uc" />
+    <CustomBuild Include="Classes\UDukePasswordWindow.uc" />
+    <CustomBuild Include="Classes\UDukePlayerGrid.uc" />
+    <CustomBuild Include="Classes\UDukePlayerList.uc" />
+    <CustomBuild Include="Classes\UDukePlayerMeshCW.uc" />
+    <CustomBuild Include="Classes\UDukePlayerSetupCW.uc" />
+    <CustomBuild Include="Classes\UDukePlayerSetupSC.uc" />
+    <CustomBuild Include="Classes\UDukePlayerSetupTopCW.uc" />
+    <CustomBuild Include="Classes\UDukePlayerSetupTopSC.uc" />
+    <CustomBuild Include="Classes\UDukePlayerSetupWindow.uc" />
+    <CustomBuild Include="Classes\UDukeProfileWindow.uc" />
+    <CustomBuild Include="Classes\UDukeProfileWindowCW.uc" />
+    <CustomBuild Include="Classes\UDukeRaisedButton.uc" />
+    <CustomBuild Include="Classes\UDukeRightClickBuddyMenu.uc" />
+    <CustomBuild Include="Classes\UDukeRightClickMenu.uc" />
+    <CustomBuild Include="Classes\UDukeRootWindow.uc" />
+    <CustomBuild Include="Classes\UDukeRulesGrid.uc" />
+    <CustomBuild Include="Classes\UDukeRulesList.uc" />
+    <CustomBuild Include="Classes\UDukeSaveEditBox.uc" />
+    <CustomBuild Include="Classes\UDukeSaveGameWindow.uc" />
+    <CustomBuild Include="Classes\UDukeSaveGameWindowCW.uc" />
+    <CustomBuild Include="Classes\UDukeSaveGameWindowSC.uc" />
+    <CustomBuild Include="Classes\UDukeSaveLoadGrid.uc" />
+    <CustomBuild Include="Classes\UDukeSaveLoadList.uc" />
+    <CustomBuild Include="Classes\UDukeScoreboard.uc" />
+    <CustomBuild Include="Classes\UDukeScoreboardCW.uc" />
+    <CustomBuild Include="Classes\UDukeScoreboardGrid.uc" />
+    <CustomBuild Include="Classes\UDukeScoreboardList.uc" />
+    <CustomBuild Include="Classes\UDukeScoreboardMenu.uc" />
+    <CustomBuild Include="Classes\UDukeScoreboardSC.uc" />
+    <CustomBuild Include="Classes\UDukeScoreboardTauntMenu.uc" />
+    <CustomBuild Include="Classes\UDukeScreenshotCW.uc" />
+    <CustomBuild Include="Classes\UDukeServerBrowserControlsCW.uc" />
+    <CustomBuild Include="Classes\UDukeServerBrowserCW.uc" />
+    <CustomBuild Include="Classes\UDukeServerBrowserSC.uc" />
+    <CustomBuild Include="Classes\UDukeServerFilterCW.uc" />
+    <CustomBuild Include="Classes\UDukeServerFilterSC.uc" />
+    <CustomBuild Include="Classes\UDukeServerGrid.uc" />
+    <CustomBuild Include="Classes\UDukeServerList.uc" />
+    <CustomBuild Include="Classes\UDukeServerListFactory.uc" />
+    <CustomBuild Include="Classes\UDukeServerPing.uc" />
+    <CustomBuild Include="Classes\UDukeSOSCW.uc" />
+    <CustomBuild Include="Classes\UDukeSOSSC.uc" />
+    <CustomBuild Include="Classes\UDukeSOSWindow.uc" />
+    <CustomBuild Include="Classes\UDukeStartMatchCW.uc" />
+    <CustomBuild Include="Classes\UDukeStartMatchSC.uc" />
+    <CustomBuild Include="Classes\UDukeTabControl.uc" />
+    <CustomBuild Include="Classes\UDukeVideoCW.uc" />
+    <CustomBuild Include="Classes\UDukeVideoSC.uc" />
+    <CustomBuild Include="Classes\UDukeVideoWindow.uc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

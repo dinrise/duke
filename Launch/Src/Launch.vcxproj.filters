@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{9c349262-be26-4ab4-b4b2-5d38326e0895}</UniqueIdentifier>
+      <Extensions>*.cpp;*.h</Extensions>
+    </Filter>
+    <Filter Include="Res">
+      <UniqueIdentifier>{ba07178c-e430-4893-abcc-e4ecca12e05e}</UniqueIdentifier>
+      <Extensions>*.rc</Extensions>
+    </Filter>
+    <Filter Include="Fortify">
+      <UniqueIdentifier>{f1929019-a3f4-4845-a1be-76c8e077c0f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bugslayer">
+      <UniqueIdentifier>{f34020be-85ce-4015-b002-2fe1e972c9ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Launch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="Fortify.c">
+      <Filter>Fortify</Filter>
+    </ClCompile>
+    <ClCompile Include="Zfortify.cpp">
+      <Filter>Fortify</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LaunchPrivate.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Res\LaunchRes.h">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="Fortify.h">
+      <Filter>Fortify</Filter>
+    </ClInclude>
+    <ClInclude Include="Ufortify.h">
+      <Filter>Fortify</Filter>
+    </ClInclude>
+    <ClInclude Include="Ufortify.hpp">
+      <Filter>Fortify</Filter>
+    </ClInclude>
+    <ClInclude Include="Zfortify.hpp">
+      <Filter>Fortify</Filter>
+    </ClInclude>
+    <ClInclude Include="BugslayerUtil.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="CrashHandler.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="CriticalSection.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="DiagAssert.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDumperValidator.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="MemStress.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="MSJDBG.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="PSAPI.H">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolEngine.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="WarningsOff.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+    <ClInclude Include="WarningsOn.h">
+      <Filter>Bugslayer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Res\LaunchRes.rc">
+      <Filter>Res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Res\Unreal.ico">
+      <Filter>Res</Filter>
+    </Image>
+    <Image Include="Res\Logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="BugslayerUtil.lib">
+      <Filter>Bugslayer</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Fortify.doc">
+      <Filter>Fortify</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

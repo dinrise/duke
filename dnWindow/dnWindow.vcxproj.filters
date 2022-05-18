@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{4fff30cf-0c15-40cc-98f7-c986a128fb14}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+    <Filter Include="Classes\Multiplayer">
+      <UniqueIdentifier>{d0739bc8-50c5-43d8-9f5e-5d8d360ab307}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\Join Game">
+      <UniqueIdentifier>{ccab8505-0ae5-44f4-80cc-a6a91c2904df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\Create Game">
+      <UniqueIdentifier>{0265d141-9360-4503-955c-b04d01c55c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\Player Setup">
+      <UniqueIdentifier>{b272e598-37c0-48e8-91e2-1b72b241b165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\MutatorList">
+      <UniqueIdentifier>{754734f7-8cb1-4fc2-bef0-9171c9034cc8}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\MapList">
+      <UniqueIdentifier>{4a5418a0-662f-49d8-bc57-8779bd30fa61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\Rules">
+      <UniqueIdentifier>{4c0a0652-6c2f-4428-b850-51dbedbf9031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\ServerBrowser">
+      <UniqueIdentifier>{95a820ea-dd8a-4373-a995-a812cda0a4d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\ServerBrowser\Grids">
+      <UniqueIdentifier>{f46c68ce-cb68-4de4-bc1a-4132c1217434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\ServerBrowser\Factories">
+      <UniqueIdentifier>{3bb6e9ce-283b-4e06-af15-4243572e0d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\ServerBrowser\Filters">
+      <UniqueIdentifier>{ddde2dfd-6dcc-4abd-9710-c159708b0a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\DukeNet NOT USED">
+      <UniqueIdentifier>{5efd225b-44ce-468b-bd8a-35f13d15ee48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\DukeNet NOT USED\ChatClient">
+      <UniqueIdentifier>{d746d9e2-a73c-4225-aff3-754349b9e715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\Password">
+      <UniqueIdentifier>{f1c34408-c426-47a2-aa8f-badab40239cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Multiplayer\Scoreboard">
+      <UniqueIdentifier>{7aee1a29-b045-4488-b49a-2ae8bdb267d6}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+    <Filter Include="Classes\Key Binder">
+      <UniqueIdentifier>{65137090-258d-432c-a597-9290a4a8412f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\LookandFeel">
+      <UniqueIdentifier>{4f896345-8a3e-4a13-b6eb-70f2358f733f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\InGameWindow">
+      <UniqueIdentifier>{5ca146c7-7570-474b-ba9e-1ea70dbe584b}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+    <Filter Include="Classes\InGameWindow\Pulldown Menu Version">
+      <UniqueIdentifier>{6de29e33-5122-447c-8135-bd9bf2eeea41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Video">
+      <UniqueIdentifier>{68c9b598-87d8-42d4-9f68-faa3dfa552e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Audio">
+      <UniqueIdentifier>{75477025-404b-4e21-93df-46c60df5d628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Game">
+      <UniqueIdentifier>{2d2cc34c-58bb-4184-a3a5-a1f536c17e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SOS">
+      <UniqueIdentifier>{5c7398fd-b0d3-4792-b95c-cd13b2066471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Parent Lock">
+      <UniqueIdentifier>{cab5e35d-ca13-430b-b5eb-3ff5b5848acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\New Game">
+      <UniqueIdentifier>{88b9046d-72f1-4784-b4a7-f016dfab6567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Load Game">
+      <UniqueIdentifier>{8892064e-48de-4db5-b870-40173550b0d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Save Game">
+      <UniqueIdentifier>{9479dd26-da8c-43d4-9735-5d2e102cdf21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Profile">
+      <UniqueIdentifier>{a2d4881e-eba8-41b2-8551-3bd59e24446c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Custom Controls">
+      <UniqueIdentifier>{b1f687e9-9638-4baa-970b-9d1ca85143c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Desktop">
+      <UniqueIdentifier>{d5eeaf37-a36b-4afb-be2f-b0b8a217e800}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Classes\UDukeJoinMultiCW.uc">
+      <Filter>Classes\Multiplayer\Join Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeJoinMultiSC.uc">
+      <Filter>Classes\Multiplayer\Join Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeJoinMultiWindow.uc">
+      <Filter>Classes\Multiplayer\Join Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeCreateMultiCW.uc">
+      <Filter>Classes\Multiplayer\Create Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeCreateMultiSC.uc">
+      <Filter>Classes\Multiplayer\Create Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeCreateMultiWindow.uc">
+      <Filter>Classes\Multiplayer\Create Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\MeshActor.uc">
+      <Filter>Classes\Multiplayer\Player Setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerMeshCW.uc">
+      <Filter>Classes\Multiplayer\Player Setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerSetupCW.uc">
+      <Filter>Classes\Multiplayer\Player Setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerSetupSC.uc">
+      <Filter>Classes\Multiplayer\Player Setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerSetupTopCW.uc">
+      <Filter>Classes\Multiplayer\Player Setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerSetupTopSC.uc">
+      <Filter>Classes\Multiplayer\Player Setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerSetupWindow.uc">
+      <Filter>Classes\Multiplayer\Player Setup</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMutatorList.uc">
+      <Filter>Classes\Multiplayer\MutatorList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMutatorListBox.uc">
+      <Filter>Classes\Multiplayer\MutatorList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMutatorListCW.uc">
+      <Filter>Classes\Multiplayer\MutatorList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMutatorListExclude.uc">
+      <Filter>Classes\Multiplayer\MutatorList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMutatorListInclude.uc">
+      <Filter>Classes\Multiplayer\MutatorList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMutatorListSC.uc">
+      <Filter>Classes\Multiplayer\MutatorList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMutatorListWindow.uc">
+      <Filter>Classes\Multiplayer\MutatorList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMapList.uc">
+      <Filter>Classes\Multiplayer\MapList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMapListBox.uc">
+      <Filter>Classes\Multiplayer\MapList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMapListCW.uc">
+      <Filter>Classes\Multiplayer\MapList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMapListExclude.uc">
+      <Filter>Classes\Multiplayer\MapList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMapListInclude.uc">
+      <Filter>Classes\Multiplayer\MapList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMapListSC.uc">
+      <Filter>Classes\Multiplayer\MapList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\dnMapListWindow.uc">
+      <Filter>Classes\Multiplayer\MapList</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeMultiRulesBase.uc">
+      <Filter>Classes\Multiplayer\Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeMultiRulesCW.uc">
+      <Filter>Classes\Multiplayer\Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeMultiRulesSC.uc">
+      <Filter>Classes\Multiplayer\Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeStartMatchCW.uc">
+      <Filter>Classes\Multiplayer\Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeStartMatchSC.uc">
+      <Filter>Classes\Multiplayer\Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerGrid.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Grids</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePlayerList.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Grids</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeRulesGrid.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Grids</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeRulesList.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Grids</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerGrid.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Grids</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerList.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Grids</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeGSpyFact.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Factories</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeGSpyLink.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Factories</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeLocalFact.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Factories</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeLocalLink.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Factories</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerListFactory.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Factories</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeBuddyList.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Filters</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeBuddyListBox.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Filters</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeRightClickBuddyMenu.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Filters</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerFilterCW.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Filters</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerFilterSC.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser\Filters</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInfoCW.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeRightClickMenu.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScreenshotCW.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerBrowserControlsCW.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerBrowserCW.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerBrowserSC.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeServerPing.uc">
+      <Filter>Classes\Multiplayer\ServerBrowser</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetChannelItem.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED\ChatClient</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetChannelListBox.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED\ChatClient</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetTabWindowChat.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED\ChatClient</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetTextArea.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED\ChatClient</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetUserItem.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED\ChatClient</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetUserListBox.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED\ChatClient</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\DukeNetLink.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeBannerAd.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeDukeNetWindow.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetCW.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetSC.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetTabWindow.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetTabWindowCreate.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNetTabWindowNews.uc">
+      <Filter>Classes\Multiplayer\DukeNet NOT USED</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePasswordCW.uc">
+      <Filter>Classes\Multiplayer\Password</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePasswordWindow.uc">
+      <Filter>Classes\Multiplayer\Password</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScoreboard.uc">
+      <Filter>Classes\Multiplayer\Scoreboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScoreboardCW.uc">
+      <Filter>Classes\Multiplayer\Scoreboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScoreboardGrid.uc">
+      <Filter>Classes\Multiplayer\Scoreboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScoreboardList.uc">
+      <Filter>Classes\Multiplayer\Scoreboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScoreboardMenu.uc">
+      <Filter>Classes\Multiplayer\Scoreboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScoreboardSC.uc">
+      <Filter>Classes\Multiplayer\Scoreboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeScoreboardTauntMenu.uc">
+      <Filter>Classes\Multiplayer\Scoreboard</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeControlsBinder.uc">
+      <Filter>Classes\Key Binder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeControlsCW.uc">
+      <Filter>Classes\Key Binder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeControlsSC.uc">
+      <Filter>Classes\Key Binder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeControlsWindow.uc">
+      <Filter>Classes\Key Binder</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeLookAndFeel.uc">
+      <Filter>Classes\LookandFeel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGamePulldownClassesMenu.uc">
+      <Filter>Classes\InGameWindow\Pulldown Menu Version</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGamePulldownMenu.uc">
+      <Filter>Classes\InGameWindow\Pulldown Menu Version</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGamePulldownSpectatorMenu.uc">
+      <Filter>Classes\InGameWindow\Pulldown Menu Version</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGamePulldownTauntMenu.uc">
+      <Filter>Classes\InGameWindow\Pulldown Menu Version</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGamePulldownTeamsMenu.uc">
+      <Filter>Classes\InGameWindow\Pulldown Menu Version</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NotifyButton.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\NotifyWindow.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGameButton.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGameWindow.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGameWindowClasses.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGameWindowSpectator.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGameWindowSpeech.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeInGameWindowTeams.uc">
+      <Filter>Classes\InGameWindow</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeVideoCW.uc">
+      <Filter>Classes\Video</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeVideoSC.uc">
+      <Filter>Classes\Video</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeVideoWindow.uc">
+      <Filter>Classes\Video</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeAudioCW.uc">
+      <Filter>Classes\Audio</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeAudioSC.uc">
+      <Filter>Classes\Audio</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeAudioWindow.uc">
+      <Filter>Classes\Audio</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeGameOptionsCW.uc">
+      <Filter>Classes\Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeGameOptionsSC.uc">
+      <Filter>Classes\Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeGameWindow.uc">
+      <Filter>Classes\Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSOSCW.uc">
+      <Filter>Classes\SOS</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSOSSC.uc">
+      <Filter>Classes\SOS</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSOSWindow.uc">
+      <Filter>Classes\SOS</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeParentLockWindow.uc">
+      <Filter>Classes\Parent Lock</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeParentLockWindowCW.uc">
+      <Filter>Classes\Parent Lock</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeParentLockWindowSC.uc">
+      <Filter>Classes\Parent Lock</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNewGameWindow.uc">
+      <Filter>Classes\New Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNewGameWindowCW.uc">
+      <Filter>Classes\New Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeNewGameWindowSC.uc">
+      <Filter>Classes\New Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeLoadGameWindow.uc">
+      <Filter>Classes\Load Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeLoadGameWindowCW.uc">
+      <Filter>Classes\Load Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSaveEditBox.uc">
+      <Filter>Classes\Save Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSaveGameWindow.uc">
+      <Filter>Classes\Save Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSaveGameWindowCW.uc">
+      <Filter>Classes\Save Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSaveGameWindowSC.uc">
+      <Filter>Classes\Save Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSaveLoadGrid.uc">
+      <Filter>Classes\Save Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeSaveLoadList.uc">
+      <Filter>Classes\Save Game</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeProfileWindow.uc">
+      <Filter>Classes\Profile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeProfileWindowCW.uc">
+      <Filter>Classes\Profile</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeArrowButton.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeColoredDynamicTextRow.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeConsoleWindow.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeDialogClientWindow.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeEmbeddedClient.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeFrameButton.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeFramedWindow.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeHTMLTextHandler.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeHTTPClient.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeLabelControl.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeMissionOverButton.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukePageWindow.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeRaisedButton.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeTabControl.uc">
+      <Filter>Classes\Custom Controls</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeButton.uc">
+      <Filter>Classes\Desktop</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeDesktopWindow.uc">
+      <Filter>Classes\Desktop</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeDesktopWindowBase.uc">
+      <Filter>Classes\Desktop</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeFakeIcon.uc">
+      <Filter>Classes\Desktop</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\DukeConsole.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\DukeIntro.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UDukeRootWindow.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

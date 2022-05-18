@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/GalaxyLib", CPNAAAAA</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <ProjectGuid>{BDC4454D-0633-49FB-9D5C-BA2DB55E5089}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.20348.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\GalaxyLib___Win32_Release\</OutDir>
+    <IntDir>.\GalaxyLib___Win32_Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\mssdk8\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <IncludePath>C:\mssdk8\include;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\DirectX8\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\GalaxyLib.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\GalaxyLib.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\GalaxyLib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalIncludeDirectories>C:\mssdk8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <AssemblerListingLocation>.\GalaxyLib___Win32_Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\GalaxyLib___Win32_Release\GalaxyLib.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\GalaxyLib___Win32_Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\GalaxyLib___Win32_Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\GalaxyLib___Win32_Release\GalaxyLib.bsc</OutputFile>
+    </Bscmake>
+    <Lib>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\GalaxyLib___Win32_Release\GalaxyLib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Hdr\EAX.H" />
+    <ClInclude Include="Hdr\Eax2.h" />
+    <ClInclude Include="Hdr\EaxMan.h" />
+    <ClInclude Include="Hdr\Galaxy.h" />
+    <ClInclude Include="Hdr\Glx-669.h" />
+    <ClInclude Include="Hdr\glx-ae.h" />
+    <ClInclude Include="Hdr\Glx-ai.h" />
+    <ClInclude Include="Hdr\Glx-am.h" />
+    <ClInclude Include="Hdr\Glx-as.h" />
+    <ClInclude Include="Hdr\Glx-au.h" />
+    <ClInclude Include="Hdr\Glx-dls.h" />
+    <ClInclude Include="Hdr\Glx-dmus.h" />
+    <ClInclude Include="Hdr\Glx-far.h" />
+    <ClInclude Include="Hdr\Glx-ima.h" />
+    <ClInclude Include="Hdr\Glx-it.h" />
+    <ClInclude Include="Hdr\Glx-mid.h" />
+    <ClInclude Include="Hdr\Glx-mod.h" />
+    <ClInclude Include="Hdr\Glx-mpa.h" />
+    <ClInclude Include="Hdr\Glx-mtm.h" />
+    <ClInclude Include="Hdr\Glx-ptm.h" />
+    <ClInclude Include="Hdr\Glx-s3m.h" />
+    <ClInclude Include="Hdr\Glx-sf2.h" />
+    <ClInclude Include="Hdr\Glx-smp.h" />
+    <ClInclude Include="Hdr\Glx-st3.h" />
+    <ClInclude Include="Hdr\Glx-stm.h" />
+    <ClInclude Include="Hdr\Glx-ult.h" />
+    <ClInclude Include="Hdr\Glx-voc.h" />
+    <ClInclude Include="Hdr\Glx-wav.h" />
+    <ClInclude Include="Hdr\Glx-xm.h" />
+    <ClInclude Include="Hdr\IA3D.H" />
+    <ClInclude Include="Hdr\ia3dapi.h" />
+    <ClInclude Include="Hdr\Loaders.h" />
+    <ClInclude Include="hufftab.h" />
+    <ClInclude Include="hufftab2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Hdr\Galaxy.ah" />
+    <CustomBuild Include="K3d.asm">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ml /Fo$(IntDir)K3d.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\k3d.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /Fo$(IntDir)K3d.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\k3d.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Kni.asm">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ml /Fo$(IntDir)kni.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\kni.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /Fo$(IntDir)kni.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\kni.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Mmx.asm">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ml /Fo$(IntDir)mmx.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\mmx.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /Fo$(IntDir)mmx.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\mmx.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="Sbs.asm">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ml /Fo$(IntDir)sbs.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\sbs.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /Fo$(IntDir)sbs.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\sbs.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="X86.asm">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ml /Fo$(IntDir)x86.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\x86.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /Fo$(IntDir)x86.obj /c /coff /Cp /Cx %(FullPath)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\x86.obj;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Galaxy.c" />
+    <ClCompile Include="Glx-669.c" />
+    <ClCompile Include="glx-ae.c" />
+    <ClCompile Include="Glx-ai.c" />
+    <ClCompile Include="Glx-am.c" />
+    <ClCompile Include="Glx-as.c" />
+    <ClCompile Include="Glx-au.c" />
+    <ClCompile Include="Glx-dls.c" />
+    <ClCompile Include="Glx-dmus.c" />
+    <ClCompile Include="Glx-far.c" />
+    <ClCompile Include="Glx-ima.c" />
+    <ClCompile Include="Glx-mid.c" />
+    <ClCompile Include="Glx-mod.c" />
+    <ClCompile Include="Glx-mpa.c" />
+    <ClCompile Include="Glx-mtm.c" />
+    <ClCompile Include="Glx-ptm.c" />
+    <ClCompile Include="Glx-s3m.c" />
+    <ClCompile Include="Glx-sf2.c" />
+    <ClCompile Include="Glx-smp.c" />
+    <ClCompile Include="Glx-st3.c" />
+    <ClCompile Include="Glx-stm.c" />
+    <ClCompile Include="Glx-ult.c" />
+    <ClCompile Include="Glx-voc.c" />
+    <ClCompile Include="Glx-wav.c" />
+    <ClCompile Include="Glx-xm.c" />
+    <ClCompile Include="HUFFDEC.C" />
+    <ClCompile Include="Loaders.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

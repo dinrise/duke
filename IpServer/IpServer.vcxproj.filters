@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{fe620607-2ef8-43b6-b37d-a6a1a85eca40}</UniqueIdentifier>
+      <Extensions>uc</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Classes\UdpServerQuery.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Classes\UdpServerUplink.uc">
+      <Filter>Classes</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
